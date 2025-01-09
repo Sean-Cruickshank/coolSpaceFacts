@@ -1,0 +1,418 @@
+﻿/* Navbar */
+
+#nav-earth-image {
+    width: 180px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.nav-hamburger-title-text {
+    font-family: 'OCR A';
+    font-size: 1.6rem;
+    margin-top: -24px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.nav-title {
+    width: 180px;
+    position: absolute;
+    top: 15px;
+    left: -12px;
+    z-index: 99;
+    font-size: 3rem;
+    font-family: 'OCR A';
+    -webkit-text-stroke: 2px black;
+    letter-spacing: 0px;
+    line-height: 40px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-top {
+    padding-left: 160px;
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 2px solid #111;
+}
+
+    .nav-top ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-top li {
+        background-color: black;
+        border-radius: 5px;
+        margin: 3px;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .nav-top li:hover {
+            background-color: #FFF;
+        }
+
+        .nav-top li a {
+            color: white;
+            font-size: 1.4rem;
+            font-family: 'OCR A';
+        }
+
+            .nav-top li a:hover {
+                color: darkgoldenrod;
+            }
+
+.nav-top-size li a:hover {
+    color: mediumpurple;
+}
+
+.nav-top-distance li a:hover {
+    color: maroon;
+}
+
+.nav-top-temperature li a:hover {
+    color: deepskyblue;
+}
+
+.nav-top-speed li a:hover {
+    color: limegreen;
+}
+
+.nav-link-current {
+    background-color: #111 !important;
+}
+
+    .nav-link-current a {
+        color: white !important;
+    }
+
+.nav-top-size .nav-link-current a:hover {
+    color: mediumpurple !important;
+}
+
+.nav-top-distance .nav-link-current a:hover {
+    color: maroon !important;
+}
+
+.nav-top-temperature .nav-link-current a:hover {
+    color: deepskyblue !important;
+}
+
+.nav-top-speed .nav-link-current a:hover {
+    color: limegreen !important;
+}
+
+/* Top Navbar Dropdown */
+
+.nav-link-alt {
+    background-color: #0A0A0A;
+    border-top: solid 3px #111;
+    color: gray;
+    font-style: oblique;
+    font-size: 0.8rem !important;
+}
+
+#navbar button {
+    height: 48px;
+    margin: auto;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+
+.navbar-nav {
+    background-color: black;
+}
+
+
+
+/* Side Navbar */
+
+#nav-side {
+    background-color: black;
+    height: 100%;
+    padding-top: 180px;
+    text-align: center;
+    float: left;
+    position: fixed;
+}
+
+.nav-side-clock {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.nav-side-content {
+    background-color: #111;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 130px;
+    height: 55%;
+    text-align: center;
+    position: fixed;
+    overflow-y: scroll;
+    padding:4px;
+}
+
+.nav-side-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'OCR A';
+}
+
+    .nav-side-link:hover {
+        color: darkgoldenrod;
+    }
+
+.nav-side-size .nav-side-link:hover {
+    color: mediumpurple;
+}
+
+.nav-side-distance .nav-side-link:hover {
+    color: maroon;
+}
+
+.nav-side-temperature .nav-side-link:hover {
+    color: deepskyblue;
+}
+
+.nav-side-speed .nav-side-link:hover {
+    color: limegreen;
+}
+
+.nav-side-item {
+    color: white;
+    display: block;
+    padding: 5px 1px;
+    margin: 4px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 10px;
+}
+
+    .nav-side-item:hover {
+        color: darkgoldenrod;
+    }
+
+.nav-side-size .nav-side-item:hover {
+    color: mediumpurple;
+}
+
+.nav-side-distance .nav-side-item:hover {
+    color: maroon;
+}
+
+.nav-side-temperature .nav-side-item:hover {
+    color: deepskyblue;
+}
+
+.nav-side-speed .nav-side-item:hover {
+    color: limegreen;
+}
+
+.nav-side-width {
+    width: 150px;
+    float: left;
+}
+
+.js-nav-side-item {
+    background-color: white;
+    border-radius: 5px;
+    color: darkgoldenrod;
+}
+
+.nav-side-size .js-nav-side-item {
+    color: mediumpurple !important;
+}
+
+.nav-side-distance .js-nav-side-item {
+    color: maroon !important;
+}
+
+.nav-side-temperature .js-nav-side-item {
+    color: deepskyblue !important;
+}
+
+.nav-side-speed .js-nav-side-item {
+    color: limegreen !important;
+}
+
+/* @media screen size - Extra Large+ */
+@media only screen and (min-width: 1120px) {
+}
+
+/* @media screen size - Large+ */
+@media only screen and (min-width: 992px) {
+}
+
+/* @media screen size - Large */
+@media only screen and (min-width: 992px) and (max-width: 1199.999px) {
+    .nav-top li a {
+        font-size: 1.3rem;
+    }
+}
+
+/* @media screen size - Medium */
+@media only screen and (min-width: 768px) and (max-width: 991.999px) {
+    .nav-top li a {
+        font-size: 1.2rem;
+    }
+}
+
+/* @media screen size - Small */
+@media only screen and (min-width: 576px) and (max-width: 767.999px) {
+
+    #nav-earth-image {
+        width: 150px;
+        top: -15px;
+        left: -15px;
+    }
+
+    .nav-title {
+        width: 150px;
+        top: 0px;
+        left: -10px;
+        z-index: 99;
+        font-size: 2.5rem;
+    }
+
+    .nav-top {
+        padding-left: 140px;
+    }
+    
+        .nav-top li a {
+            font-size: 1.1rem;
+        }
+
+    /* Side Navbar */
+
+    #nav-side {
+        padding-top: 150px;
+    }
+
+    .nav-side-clock {
+        font-size: 0.9rem;
+    }
+
+    .nav-side-content {
+        width: 110px;
+    }
+
+    .nav-side-link {
+        font-size: 1.1rem;
+    }
+
+    .nav-side-item {
+        font-size: 0.65rem;
+        margin: 1px;
+    }
+
+    .nav-side-width {
+        width: 130px;
+    }
+}
+
+/* @media screen size - Extra Small */
+@media only screen and (max-width: 575.999px) {
+
+    #nav-earth-image {
+        width: 150px;
+        top: -15px;
+        left: -15px;
+    }
+
+    .nav-title {
+        width: 150px;
+        top: 0px;
+        left: -10px;
+        z-index: 99;
+        font-size: 2.5rem;
+    }
+    
+    /* Top Navbar Dropdown */
+
+    .nav-top {
+        padding-left: 140px;
+    }
+        .nav-top ul {
+            display: block;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border: solid 2px darkgoldenrod;
+        }
+
+        .nav-top li {
+            border-radius: 0;
+            border-bottom: 2px solid #111;
+            margin: 0;
+        }
+
+            .nav-top li:last-child {
+                border-bottom: none;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            .nav-top li a {
+                font-size: 1rem;
+            }
+
+    .nav-top-size ul {
+        border: solid 2px mediumpurple;
+    }
+
+    .nav-top-distance ul {
+        border: solid 2px maroon;
+    }
+
+    .nav-top-temperature ul {
+        border: solid 2px deepskyblue;
+    }
+
+    .nav-top-speed ul {
+        border: solid 2px limegreen;
+    }
+
+    .nav-link-current {
+        background-color: #111 !important;
+    }
+
+    /* Side Navbar */
+
+    #nav-side {
+        padding-top: 150px;
+    }
+
+    .nav-side-clock {
+        font-size:0.9rem;
+    }
+
+    .nav-side-content {
+        width: 110px;
+    }
+
+    .nav-side-link {
+        font-size: 1.1rem;
+    }
+
+    .nav-side-item {
+        font-size: 0.6rem;
+        margin: 0;
+    }
+
+    .nav-side-width {
+        width: 130px;
+    }
+}

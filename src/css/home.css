@@ -1,0 +1,399 @@
+﻿/* Home Page */
+
+.home-intro {
+    margin-bottom: 600px;
+    padding:0;
+}
+
+.home-intro, .home-body {
+    text-align: center;
+}
+
+    .home-intro img {
+        width: calc(100% - 150px);
+        position: absolute;
+        left: 150px;
+        z-index: 1;
+    }
+
+.home-bg-large {
+    display: none;
+}
+
+.row-buffer {
+    padding: 0;
+    margin: 0;
+}
+
+.home-bg-medium {
+    display: none;
+}
+
+.home-card {
+    margin-bottom: 80px;
+    background-color: rgba(0,0,0,0.6);
+    border: 3px solid #111;
+    border-radius: 10px;
+}
+
+    .home-card a {
+        text-decoration: none;
+    }
+
+        .home-card a div {
+            padding: 10px;
+            min-height: 300px;
+        }
+
+    .home-card h2 {
+        color: darkgoldenrod;
+    }
+
+    .home-card p, .card-disclaimer p {
+        font-size: 1.5rem;
+    }
+
+.home-card-not-select {
+    padding: 10px;
+    min-height: 400px;
+}
+
+.home-card-select:hover {
+    border: 3px solid white;
+    background-color: rgba(0,0,0,1);
+}
+
+.home-card-image {
+    width: 300px;
+    border: 2px solid white;
+    margin: 20px;
+}
+
+.card-disclaimer {
+    width: 80%;
+    padding: 10px;
+    background-color: rgba(50,0,0,0.6);
+    min-height: 200px;
+    border: 3px solid #400;
+    border-radius: 10px;
+}
+
+    .home-card h2, .card-disclaimer h2 {
+        margin-bottom: 30px;
+        font-family: 'OCR A';
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3.5rem;
+    }
+
+    .card-disclaimer h2 {
+        color: lightcoral;
+    }
+
+    .card-disclaimer p {
+        color: lightcoral;
+    }
+
+/* Attributions Page */
+
+.attributions-disclaimer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.attributions-intro {
+    background-color: rgba(0,0,0,0.8);
+    margin: 0;
+    margin-top: 10px;
+    padding: 4px;
+    border: solid 2px #111;
+    border-radius: 10px;
+}
+
+.attribution-radio-select, .attribution-searchbar {
+    text-align: center;
+}
+
+    .attribution-radio-select h3, .attribution-searchbar h3 {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'OCR A';
+        font-size: 2rem;
+    }
+
+.attribution-radio {
+    color: white;
+    padding: 4px;
+    font-size: 1.2rem;
+}  
+
+    .attribution-searchbar {
+        justify-content: right;
+    }
+
+.attributions-table {
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border: solid 2px #111;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+    .attributions-table th {
+        background-color: black;
+        padding: 4px;
+        padding-left: 10px;
+        width: 25%;
+        height: 50px;
+        color: gray;
+        font-size: 1.8rem;
+    }
+
+    .attributions-table td {
+        padding: 4px;
+        padding-left: 10px;
+    }
+
+    .attributions-table tr {
+        background-color: rgba(50,50,50,0.5);
+        height: 50px;
+    }
+
+    .attributions-table tr:nth-child(odd) {
+        background-color: rgba(25,25,25,0.5);
+    }
+
+.tableHeaderBold {
+    font-weight: 900;
+    color: white !important;
+}
+
+#myInput {
+    background-position: 10px 12px;
+    width: 80%;
+    font-size: 16px;
+    padding: 4px 20px 3px 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+#attributionsTable {
+    color: white;
+    width: 100%;
+    word-wrap: break-word;
+}
+       
+
+/* @media screen size - Extra Large+ */
+@media only screen and (min-width: 1200px) {
+
+    .home-bg-large {
+        display: block;
+    }
+}
+
+/* @media screen size - Large+ */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* @media screen size - Large */
+@media only screen and (min-width: 992px) and (max-width: 1199.999px) {
+
+    .home-intro {
+        margin-bottom: 450px;
+        padding: 0;
+    }
+
+    .home-bg-large {
+        display: block;
+    }
+    
+    .home-card-image {
+        width: 250px;
+    }
+
+    .home-card h2, .card-disclaimer h2 {
+        font-size: 3rem;
+    }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 1.3rem;
+    }
+
+        .attributions-table th {
+            font-size: 1.5rem;
+        }
+}
+
+/* @media screen size - Medium */
+@media only screen and (min-width: 768px) and (max-width: 991.999px) {
+
+    .home-intro {
+        margin-bottom: 450px;
+        padding: 0;
+    }
+    
+    .home-intro img {
+        width: calc(100% - 150px);
+        position: absolute;
+        left: 150px;
+        z-index: 1;
+    }
+
+    .home-bg-medium {
+        display: block;
+    }
+
+    .home-card {
+        width: 80%;
+    }
+
+    .home-card-image {
+        width: 350px;
+    }
+
+    .home-card p, .card-disclaimer p {
+        font-size: 1.4rem;
+    }
+
+    .home-card h2, .card-disclaimer h2 {
+        font-size: 3.5rem;
+    }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 1.1rem;
+    }
+
+        .attributions-table th {
+            font-size: 1.3rem;
+        }
+}
+
+/* @media screen size - Small */
+@media only screen and (min-width: 576px) and (max-width: 767.999px) {
+
+    .home-intro {
+        margin-bottom: 350px;
+        padding: 0;
+    }
+    
+    .home-intro img {
+        width: calc(100% - 130px);
+        position: absolute;
+        left: 130px;
+        z-index: 1;
+    }
+
+    .home-bg-medium {
+        display: block;
+    }
+
+    .home-card {
+        width: 80%;
+    }
+
+    .home-card-image {
+        width: 250px;
+    }
+
+    .home-card p, .card-disclaimer p {
+        font-size: 1.2rem;
+    }
+
+    .home-card h2, .card-disclaimer h2 {
+        font-size: 2.7rem;
+    }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 0.9rem;
+    }
+
+        .attributions-table th {
+            padding: 4px;
+            padding-left: 5px;
+            font-size: 1.1rem;
+        }
+
+        .attributions-table td {
+            padding: 4px;
+            padding-left: 5px;
+        }
+
+    .attribution-radio-select h3, .attribution-searchbar h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* @media screen size - Extra Small */
+@media only screen and (max-width: 575.999px) {
+
+    .home-intro {
+        margin-bottom: 250px;
+        padding: 0;
+    }
+    
+    .home-intro img {
+        width: calc(100% - 130px);
+        position: absolute;
+        left: 130px;
+        z-index: 1;
+    }
+
+    .home-bg-medium {
+        display: block;
+    }
+
+    .home-card, .card-disclaimer {
+        width: 90%;
+    }
+
+    .home-card-image {
+        width: 140px;
+    }
+
+    .home-card p, .card-disclaimer p {
+        font-size: 1rem;
+    }
+
+    .home-card h2, .card-disclaimer h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-card a div {
+        padding: 4px;
+        min-height: 300px;
+    }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 0.7rem;
+    }
+
+        .attributions-table th {
+            padding: 4px;
+            padding-left: 5px;
+            font-size: 0.9rem;
+        }
+
+        .attributions-table td {
+            padding: 4px;
+            padding-left: 5px;
+        }
+
+    .attribution-radio-select h3, .attribution-searchbar h3 {
+        font-size: 1.6rem;
+    }
+
+    td div {
+        max-width: 50px;
+    }
+}

@@ -1,0 +1,259 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+body {
+    min-height: 100%;
+    max-width: 100%;
+    background-color: black;
+}
+
+p {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Presets */
+
+.header-a {
+    color: white;
+    font-family: 'OCR A';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15rem;
+    width: 100%;
+}
+
+.header-b {
+    color: white;
+    font-family: 'OCR A';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 9rem;
+}
+
+.link-a {
+    font-family: 'OCR A';
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: darkgoldenrod;
+}
+
+.footer-size a:hover {
+    color: mediumpurple;
+}
+
+.footer-distance a:hover {
+    color: maroon;
+}
+
+.footer-temperature a:hover {
+    color: deepskyblue;
+}
+
+.footer-speed a:hover {
+    color: limegreen;
+}
+
+/* Shared Layout */
+
+#shared-layout-body {
+    min-height: 500px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    width: calc(100% - 150px);
+    float: left;
+    background-color: black;
+}
+
+.view-body {
+    background-image: url(/images/back.png);
+    background-size: 25%;
+    min-height: 800px;
+    padding: 30px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    background-color: black;
+}
+
+.footer-top {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-top a {
+    padding:15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    height: 45px;
+}
+
+.footer-link {
+    text-transform: uppercase;
+    color: black !important;
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+}
+
+.footer-size .footer-link {
+    background-color: mediumpurple;
+}
+
+.footer-distance .footer-link {
+    background-color: maroon;
+}
+
+.footer-temperature .footer-link {
+    background-color: deepskyblue;
+}
+
+.footer-speed .footer-link {
+    background-color: limegreen;
+}
+
+.footer-sublink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: dimgrey;
+}
+
+    .footer-link:hover, .footer-sublink:hover {
+        color: white;
+    }
+
+/* @media screen size - Extra Large+ */
+@media only screen and (min-width: 1120px) {
+
+}
+
+/* @media screen size - Large+ */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* @media screen size - Large */
+@media only screen and (min-width: 992px) and (max-width: 1199.999px) {
+    
+    .header-a {
+        font-size: 6.5rem;
+    }
+
+    .header-b {
+        font-size: 2.5rem;
+    }
+}
+
+/* @media screen size - Medium */
+@media only screen and (min-width: 768px) and (max-width: 991.999px) {
+
+    .view-body {
+        padding: 4px;
+        padding-top: 30px;
+    }
+    
+    .header-a {
+        font-size: 6rem;
+    }
+
+    .header-b {
+        font-size: 2.25rem;
+    }
+}
+
+/* @media screen size - Small */
+@media only screen and (min-width: 576px) and (max-width: 767.999px) {
+
+    .view-body {
+        padding: 4px;
+        padding-top: 30px;
+    }
+
+    .header-a {
+        font-size: 4.5rem;
+    }
+
+    .header-b {
+        font-size: 1.75rem;
+    }
+    
+    #shared-layout-body {
+        width: calc(100% - 130px);
+    }
+
+    .footer {
+        width: calc(100% - 130px);
+        margin-left: 130px;
+    }
+}
+
+/* @media screen size - Extra Small */
+@media only screen and (max-width: 575.999px) {
+
+    .view-body {
+        padding: 4px;
+        padding-top: 30px;
+    }
+
+    .header-a {
+        font-size: 3.25rem;
+    }
+
+    .header-b {
+        font-size: 1.25rem;
+    }
+
+    #shared-layout-body {
+        width: calc(100% - 130px);
+    }
+
+    /* Footer */
+
+    .footer {
+        width: calc(100% - 130px);
+        margin-left: 130px;
+    }
+
+    .footer-top {
+        font-size: 0.6rem;
+    }
+
+        .footer-top a {
+            padding: 10px;
+        }
+
+    .footer-logo {
+        height: 35px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+
