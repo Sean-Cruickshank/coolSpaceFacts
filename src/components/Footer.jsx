@@ -1,5 +1,7 @@
 import { Outlet, Link, NavLink } from "react-router-dom"
 
+import logo from '../images/coollogo2.png'
+
 export default function Footer() {
   
   //Highlights the active page in the footer menu
@@ -17,6 +19,27 @@ export default function Footer() {
     
   }
 
+  const pageArray = [
+    {name: 'Home', url: '..'},
+    {name: 'Attributions', url: '/attributions'},
+    {name: 'Size', url: '/size'},
+    {name: 'Distance', url: '/distance'},
+    {name: 'Temperature', url: '/temperature'},
+    {name: 'Speed', url: '/speed'}
+  ]
+
+  const footerElement = pageArray.map((page) => {
+    return (
+      <NavLink
+        key={page.name}
+        className='link-a'
+        to={page.url}
+      >
+        {page.name.toUpperCase()}
+      </NavLink>
+    )
+  })
+
   footerSelect();
   
   return (
@@ -24,24 +47,13 @@ export default function Footer() {
       <div className="container-fluid">
           <div className="row">
               <div className="footer-top">
-                  <NavLink className="link-a js-footer-link-Home" to="..">HOME</NavLink>
-                  <NavLink className="link-a js-footer-link-Attributions" to="/attributions">ATTRIBUTIONS</NavLink>
-              </div>
-              <div className="footer-top">
-                  <NavLink className="link-a js-footer-link-Size" to="/size">SIZE</NavLink>
-                  <NavLink className="link-a js-footer-link-Distance" to="/distance">DISTANCE</NavLink>
-                  <NavLink className="link-a js-footer-link-Temperature" to="/temperature">TEMPERATURE</NavLink>
-                  <NavLink className="link-a js-footer-link-Speed" to="/speed">SPEED</NavLink>
+                {footerElement}
               </div>
           </div>
           <div className="footer-bottom">
-              <a href="https://www.seancruickshank.co.nz/"><img src="/images/coollogo2.png" target="_blank" className="footer-logo" alt="Logo"/></a>
-              <br />
-              <br />
+              <a href="https://www.seancruickshank.co.nz/"><img src={logo} target="_blank" className="footer-logo" alt="Logo"/></a>
               <p>Cool Space Facts &copy; 2024</p>
               <p>Website created by Sean Cruickshank</p>
-              <br />
-              <br />
           </div>
       </div>
   </footer>

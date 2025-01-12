@@ -14,6 +14,7 @@ export default function Layout() {
     let earthImage = ``;
     function setEarthImage(today) {
         const todayTime = today.format('HH');
+        console.log(todayTime)
         let imageRef = day
         if (todayTime >= 0 && todayTime < 6) {
             imageRef = night
@@ -23,23 +24,42 @@ export default function Layout() {
             imageRef = day
         } else if (todayTime >= 17 && todayTime < 21) {
             imageRef = dusk
-        } else if (todayTime >= 21 && todayTime < 23) {
+        } else if (todayTime >= 21) {
             imageRef = night
         }
         earthImage = <img id="nav-earth-image" src={imageRef} />;
     }
 
-    let clock = '12:00PM'
+    const [clock, setClock] = React.useState('12:00PM')
+
     function clockRefresh() {
         const clockSet = dayjs();
         const clockFormat = clockSet.format('h:mmA');
-        clock = clockFormat
-        setEarthImage(clockSet, earthImage);
+        if (clock !== clockFormat) {
+            setClock(clockFormat)
+            clearInterval(clockInterval)
+            console.log(clock)
+        }
     }
 
-    //gets current time, formats correctly, runs setEarthImage and updates every 15 seconds
-    clockRefresh()
-    setInterval(clockRefresh, 15000);
+    setEarthImage(dayjs())
+    const clockInterval = setInterval(clockRefresh, 1000)
+
+
+    // let clock = React.useRef(dayjs())
+
+    // function clockRefresh() {
+    //     const clockSet = dayjs();
+    //     const clockFormat = clockSet.format('h:mmA');
+    //     clock = clockFormat
+    //     setEarthImage(clockSet);
+    //     console.log(clock)
+    // }
+
+    // //gets current time, formats correctly, runs setEarthImage and updates every 15 seconds
+    // clockRefresh()
+    // setInterval(clockRefresh, 2000);
+
   
     return (
     <>
@@ -83,7 +103,7 @@ export default function Layout() {
         </nav>
     </header>
           
-          <div id="nav-side" className="nav-side-width">
+    <div id="nav-side" className="nav-side-width">
         <p className="nav-side-clock">Local Time</p>
         <p className="nav-side-clock">
             {clock}
