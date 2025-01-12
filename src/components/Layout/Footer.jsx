@@ -1,6 +1,6 @@
 import { Outlet, Link, NavLink } from "react-router-dom"
 
-import logo from '../images/coollogo2.png'
+import logo from '../../images/coollogo2.png'
 
 export default function Footer() {
   
