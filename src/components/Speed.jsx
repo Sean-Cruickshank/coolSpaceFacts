@@ -7,7 +7,7 @@ export default function Speed() {
     <>
       <div className="view-body">
         <div className="compare-intro">
-          <h1 class="compare-intro-speed">The Speed of the Universe</h1>
+          <h1 className="compare-intro-speed">The Speed of the Universe</h1>
           <p>From planetary days so slow you could outwalk them, to the cosmic speed limit. This page explores the fastest objects in the universe.</p>
         </div>
         <div className="js-speed-body">

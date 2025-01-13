@@ -11,15 +11,17 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Sidenav from "./Sidenav";
 
-import { getCompareData } from "../../utils/compare";
-
 export default function Layout() {
 
   // Grabs the page name
   const url = window.location.href
   const urlSplit = url.split('/');
   const location = urlSplit[urlSplit.length - 1]
-  getCompareData(location)
+  const [theme, setTheme] = React.useState()
+
+  function updateTheme() {
+    setTheme(location)
+  }
 
   let earthImage = ``;
   function setEarthImage(today) {
@@ -55,9 +57,9 @@ export default function Layout() {
 
   return (
     <>
-      <Navbar earthImage={earthImage} />
+      <Navbar earthImage={earthImage} location={location} updateTheme={updateTheme}/>
 
-      <Sidenav clock={clock} />
+      <Sidenav clock={clock} location={location} />
 
       <div id="shared-layout-body" className="container-fluid">
         <main role="main" className="pb-3">
@@ -65,7 +67,7 @@ export default function Layout() {
         </main>
       </div>
 
-      <Footer />
+      <Footer location={location} updateTheme={updateTheme} />
     </>
   )
 }

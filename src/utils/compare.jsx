@@ -20,16 +20,6 @@ export function getCompareData(location) {
 	} else if (location === 'speed') {
 		cardList = speedList
 	}
-	console.log(location)
-	
-	// const navbarTop = document.querySelector('.nav-top');
-	// navbarTop.classList.add('nav-top-size');
-	
-	// const navbarSide = document.querySelector('.nav-side-width');
-	// navbarSide.classList.add('nav-side-size');
-	
-	// const footerSelect = document.querySelector('.footer');
-	// footerSelect.classList.add('footer-size');
 	
 	//Generates IDs for each data entry based on index in the array
 	const cardListId = cardList.map((item, index) => {
@@ -70,11 +60,11 @@ export function getCompareData(location) {
 		if (location === 'size') {
 			metricElement = <p className="card-diameter">Diameter: {item.size}</p>
 		} else if (location === 'distance') {
-			metricElement = <p class="card-distance">Distance: {item.distance}</p>
+			metricElement = <p className="card-distance">Distance: {item.distance}</p>
 		} else if (location === 'temperature') {
-			metricElement = <p class="card-temperature">Temperature: {item.temperature}</p>
+			metricElement = <p className="card-temperature">Temperature: {item.temperature}</p>
 		} else if (location === 'speed') {
-			metricElement = <p class="card-speed">Speed: {item.speed}</p>
+			metricElement = <p className="card-speed">Speed: {item.speed}</p>
 		}
 	
 		return (

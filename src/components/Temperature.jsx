@@ -7,7 +7,7 @@ export default function Temperature() {
     <>
       <div className="view-body">
         <div className="compare-intro">
-          <h1 class="compare-intro-temperature">The Heat of the Universe</h1>
+          <h1 className="compare-intro-temperature">The Heat of the Universe</h1>
           <p>From the coldest reaches of deep space to the cores of the brightest stars, with some familiar places in between. This page explores the temperature extremes of the universe.</p>
         </div>
         <div className="js-temperature-body">

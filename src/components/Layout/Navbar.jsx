@@ -1,10 +1,11 @@
 import { Outlet, Link, NavLink } from "react-router-dom"
 
-export default function Navbar({earthImage}) {
+export default function Navbar({earthImage, location, updateTheme}) {
+  
   return (
     <header>
       <nav className="navbar navbar-expand-sm navbar-toggleable-sm mb-3 fixed-top">
-        <div id="navbar" className="container-fluid nav-top">
+        <div id="navbar" className={`container-fluid nav-top nav-top-${location}`}>
           <div className="earth-image">
             {earthImage}
           </div>
@@ -31,6 +32,7 @@ export default function Navbar({earthImage}) {
                     : "nav-link"
                   }
                   to="/size"
+                  onClick={updateTheme}
                 >Size</NavLink>
               </li>
 
@@ -41,6 +43,7 @@ export default function Navbar({earthImage}) {
                     : "nav-link"
                   }
                   to="/distance"
+                  onClick={updateTheme}
                 >Distance</NavLink>
               </li>
 
@@ -51,6 +54,7 @@ export default function Navbar({earthImage}) {
                     : "nav-link"
                   }
                   to="/temperature"
+                  onClick={updateTheme}
                 >Temperature</NavLink>
               </li>
 
@@ -60,6 +64,7 @@ export default function Navbar({earthImage}) {
                     ? "nav-link-current nav-link" : "nav-link"
                   }
                   to="/speed"
+                  onClick={updateTheme}
                 >Speed</NavLink>
               </li>
             </ul>

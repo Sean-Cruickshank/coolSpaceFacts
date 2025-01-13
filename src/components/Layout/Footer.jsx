@@ -2,7 +2,7 @@ import { Outlet, Link, NavLink } from "react-router-dom"
 
 import logo from '../../images/coollogo2.png'
 
-export default function Footer() {
+export default function Footer({updateTheme, location}) {
   
   //Highlights the active page in the footer menu
   function footerSelect() {
@@ -34,6 +34,7 @@ export default function Footer() {
         key={page.name}
         className='link-a'
         to={page.url}
+        onClick={updateTheme}
       >
         {page.name.toUpperCase()}
       </NavLink>
@@ -43,7 +44,7 @@ export default function Footer() {
   footerSelect();
   
   return (
-    <footer className="footer text-muted">
+    <footer className={`footer text-muted footer-${location}`}>
       <div className="container-fluid">
           <div className="row">
               <div className="footer-top">

@@ -1,9 +1,9 @@
 import { Outlet, Link, NavLink } from "react-router-dom"
 
-export default function Sidenav({clock}) {
+export default function Sidenav({clock, location}) {
   return (
     <>
-      <div id="nav-side" className="nav-side-width">
+      <div id="nav-side" className={`nav-side-width nav-side-${location}`}>
         <p className="nav-side-clock">Local Time</p>
         <p className="nav-side-clock">
             {clock}
