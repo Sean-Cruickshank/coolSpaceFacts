@@ -1,9 +1,8 @@
-import '../utils/size.jsx'
-import { cardElement } from '../utils/size.jsx'
+import '../utils/compare.jsx'
+import { getCompareData } from '../utils/compare.jsx'
 
 export default function Size() {
-
-  
+  const cardElement = getCompareData('size')
   return (
     <>
       <div className="view-body">

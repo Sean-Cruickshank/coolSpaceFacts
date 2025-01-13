@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 import React from "react";
-import { Outlet, Link, NavLink } from "react-router-dom"
+import { Outlet, Link, NavLink, useParams } from "react-router-dom"
 
 import day from '../../images/earth-day.png'
 import night from '../../images/earth-night.png'
@@ -11,8 +11,16 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Sidenav from "./Sidenav";
 
+import { getCompareData } from "../../utils/compare";
+
 export default function Layout() {
-  
+
+  // Grabs the page name
+  const url = window.location.href
+  const urlSplit = url.split('/');
+  const location = urlSplit[urlSplit.length - 1]
+  getCompareData(location)
+
   let earthImage = ``;
   function setEarthImage(today) {
     const todayTime = today.format('HH');
