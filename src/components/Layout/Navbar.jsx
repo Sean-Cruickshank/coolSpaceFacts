@@ -24,17 +24,43 @@ export default function Navbar({earthImage}) {
           </button>
 
           <ul className="navbar-nav flex-grow-1">
-              <li className="nav-item js-nav-link-size">
-                  <Link className="nav-link" to="/size">Size</Link>
+              <li className="nav-item">
+                <NavLink
+                  className={({isActive}) => isActive
+                    ? "nav-link-current nav-link" 
+                    : "nav-link"
+                  }
+                  to="/size"
+                >Size</NavLink>
               </li>
-              <li className="nav-item js-nav-link-distance">
-              <Link className="nav-link" to="/distance">Distance</Link>
+
+              <li className="nav-item">
+                <NavLink
+                  className={({isActive}) => isActive
+                    ? "nav-link-current nav-link" 
+                    : "nav-link"
+                  }
+                  to="/distance"
+                >Distance</NavLink>
               </li>
-              <li className="nav-item js-nav-link-temperature">
-              <Link className="nav-link" to="/temperature">Temperature</Link>
+
+              <li className="nav-item">
+                <NavLink
+                  className={({isActive}) => isActive
+                    ? "nav-link-current nav-link"
+                    : "nav-link"
+                  }
+                  to="/temperature"
+                >Temperature</NavLink>
               </li>
-              <li className="nav-item js-nav-link-speed">
-              <Link className="nav-link" to="/speed">Speed</Link>
+
+              <li className="nav-item">
+                <NavLink
+                  className={({isActive}) => isActive
+                    ? "nav-link-current nav-link" : "nav-link"
+                  }
+                  to="/speed"
+                >Speed</NavLink>
               </li>
             </ul>
 
