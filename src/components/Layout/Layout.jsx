@@ -17,10 +17,13 @@ export default function Layout() {
   const url = window.location.href
   const urlSplit = url.split('/');
   const location = urlSplit[urlSplit.length - 1]
-  const [theme, setTheme] = React.useState()
 
+  // Sets the colour theme for each page
+  // onClick functions on the page Links trigger updateTheme() and force a re-render with the corresponding theme
+  const [theme, setTheme] = React.useState('default')
   function updateTheme() {
-    setTheme(location)
+    setTheme((window.location.href).split('/')[urlSplit.length - 1])
+    console.log(theme, (window.location.href).split('/')[urlSplit.length - 1])
   }
 
   let earthImage = ``;
@@ -57,9 +60,17 @@ export default function Layout() {
 
   return (
     <>
-      <Navbar earthImage={earthImage} location={location} updateTheme={updateTheme}/>
+      <Navbar
+        earthImage={earthImage}
+        location={location}
+        updateTheme={updateTheme}
+      />
 
-      <Sidenav clock={clock} location={location} />
+      <Sidenav
+        clock={clock}
+        location={location}
+        updateTheme={updateTheme}
+      />
 
       <div id="shared-layout-body" className="container-fluid">
         <main role="main" className="pb-3">
@@ -67,7 +78,10 @@ export default function Layout() {
         </main>
       </div>
 
-      <Footer location={location} updateTheme={updateTheme} />
+      <Footer
+        location={location}
+        updateTheme={updateTheme}
+      />
     </>
   )
 }

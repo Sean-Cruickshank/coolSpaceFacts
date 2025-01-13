@@ -28,8 +28,8 @@ export default function Navbar({earthImage, location, updateTheme}) {
               <li className="nav-item">
                 <NavLink
                   className={({isActive}) => isActive
-                    ? "nav-link-current nav-link" 
-                    : "nav-link"
+                    ? "nav-link-current nav-link nav-top-link" 
+                    : "nav-link nav-top-link"
                   }
                   to="/size"
                   onClick={updateTheme}
@@ -39,8 +39,8 @@ export default function Navbar({earthImage, location, updateTheme}) {
               <li className="nav-item">
                 <NavLink
                   className={({isActive}) => isActive
-                    ? "nav-link-current nav-link" 
-                    : "nav-link"
+                    ? "nav-link-current nav-link nav-top-link" 
+                    : "nav-link nav-top-link"
                   }
                   to="/distance"
                   onClick={updateTheme}
@@ -50,8 +50,8 @@ export default function Navbar({earthImage, location, updateTheme}) {
               <li className="nav-item">
                 <NavLink
                   className={({isActive}) => isActive
-                    ? "nav-link-current nav-link"
-                    : "nav-link"
+                    ? "nav-link-current nav-link nav-top-link"
+                    : "nav-link nav-top-link"
                   }
                   to="/temperature"
                   onClick={updateTheme}
@@ -61,7 +61,7 @@ export default function Navbar({earthImage, location, updateTheme}) {
               <li className="nav-item">
                 <NavLink
                   className={({isActive}) => isActive
-                    ? "nav-link-current nav-link" : "nav-link"
+                    ? "nav-link-current nav-link nav-top-link" : "nav-link nav-top-link"
                   }
                   to="/speed"
                   onClick={updateTheme}

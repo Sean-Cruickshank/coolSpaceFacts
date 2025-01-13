@@ -55,8 +55,12 @@
         align-items: center;
     }
 
-        .nav-top li:hover {
-            background-color: #FFF;
+        .nav-link {
+            border-radius: 5px;
+        }
+    
+        .nav-top-link:hover {
+            background-color: white;
         }
 
         .nav-top li a {
@@ -67,6 +71,10 @@
 
             .nav-top li a:hover {
                 color: darkgoldenrod;
+            }
+
+            .nav-top li a:focus {
+                color: white;
             }
 
 .nav-top-size li a:hover {
@@ -173,6 +181,14 @@
     .nav-side-link:hover {
         color: darkgoldenrod;
     }
+
+    .nav-side-link:focus {
+        color: darkgoldenrod;
+    }
+
+.nav-side-link-current {
+    color: white;
+}
 
 .nav-side-size .nav-side-link:hover {
     color: mediumpurple;
