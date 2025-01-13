@@ -80,7 +80,7 @@ a:hover {
 }
 
 .view-body {
-    background-image: url(/images/back.png);
+    background-image: url(/src/images/back.png);
     background-size: 25%;
     min-height: 800px;
     padding: 30px;

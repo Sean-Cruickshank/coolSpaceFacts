@@ -5,10 +5,11 @@ export default function Navbar({earthImage}) {
     <header>
       <nav className="navbar navbar-expand-sm navbar-toggleable-sm mb-3 fixed-top">
         <div id="navbar" className="container-fluid nav-top">
-          <div className="js-earth-image">
+          <div className="earth-image">
             {earthImage}
-            <p>test</p>
           </div>
+
+          {/* Hamburger Menu */}
           <button 
             className="navbar-toggler button"
             type="button"
@@ -17,13 +18,12 @@ export default function Navbar({earthImage}) {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation">
-
             <div className="nav-icon">
                 <img src="/images/hamburger.png" alt="Logo" height="45" />
             </div>
           </button>
-          <div className="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul className="navbar-nav flex-grow-1">
+
+          <ul className="navbar-nav flex-grow-1">
               <li className="nav-item js-nav-link-size">
                   <Link className="nav-link" to="/size">Size</Link>
               </li>
@@ -37,7 +37,13 @@ export default function Navbar({earthImage}) {
               <Link className="nav-link" to="/speed">Speed</Link>
               </li>
             </ul>
-          </div>
+
+          {/* <div className="">
+            <NavLink to="/size">Size</NavLink>
+            <NavLink to="/distance">Distance</NavLink>
+            <NavLink to="/temperature">Temperature</NavLink>
+            <NavLink to="/speed">Speed</NavLink>
+          </div> */}
         </div>
       </nav>
     </header>
