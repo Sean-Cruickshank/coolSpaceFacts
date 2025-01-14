@@ -4,27 +4,26 @@ import { temperatureList } from '../data/temperaturedata.js'
 import { speedList } from '../data/speeddata.js'
 
 // Grabs the page name
-const url = window.location.href
-const urlSplit = url.split('/');
-const location = urlSplit[urlSplit.length - 1]
 
 // Grabs the corresponding data array for location
-let cardList = [];
-export function getCompareData(location) {
-	if (location === 'size') {
+
+export function locationSelect() {
+	const location = window.location.href
+	let cardList = [];
+	if (location.includes('size')) {
 		cardList = sizeList
-	} else if (location === 'distance') {
+	} else if (location.includes('distance')) {
 		cardList = distanceList
-	} else if (location === 'temperature') {
+	} else if (location.includes('temperature')) {
 		cardList = temperatureList
-	} else if (location === 'speed') {
+	} else if (location.includes('speed')) {
 		cardList = speedList
 	}
-	
-	//Generates IDs for each data entry based on index in the array
-	const cardListId = cardList.map((item, index) => {
-		return item.id = `size-${index}`;
-	})
+	return cardList
+}
+
+export function getCompareData(location) {
+	let cardList = locationSelect()
 	
 	let sidebarHTML = '';
 	let cardCount = 0;
@@ -82,51 +81,6 @@ export function getCompareData(location) {
 			</div>
 		)
 	})
-	
-	
-	cardList.forEach((item) => {
-		let factListHTML = '';
-		for (let i = 0; i < item.factList.length; i++) {
-			const fact = item.factList[i];
-			factListHTML += `<p className="card-fact">${fact}</p>`;
-		}
-			
-		if (item.id === 'size-0') {
-			sidebarHTML +=
-				<a
-					className="nav-side-item ${item.id} js-nav-side-item"
-					href="#${item.id}"
-				>${item.title}</a>
-		} else {
-			sidebarHTML +=
-				<a
-					className="nav-side-item ${item.id}" href="#${item.id}"
-				>${item.title}</a>
-		}
-			
-			// document.querySelector('.js-size-body').innerHTML = sizeHTML;
-			// document.querySelector('.js-nav-side-content').innerHTML = sidebarHTML;
-	
-	});
-	
-	//Highlights entries on sidenav based on position on the page
-	window.addEventListener('scroll', () => {
-			const position = Math.floor((scrollY) / 1000);
-			if (position < cardList.length) {
-					// NavSideHighlight(position);
-			}
-	
-	});
-	
-	//Highlights the active card div and removes highlights from all others
-	function NavSideHighlight(index) {
-		const newCard = document.querySelector(`.size-${index}`);
-		const oldCard = Array.from(document.getElementsByClassName('js-nav-side-item'));
-		oldCard.forEach((card) => {
-			card.classList.remove('js-nav-side-item');
-		});
-		newCard.classList.add('js-nav-side-item');
-	}
 
 	return cardElement
 }

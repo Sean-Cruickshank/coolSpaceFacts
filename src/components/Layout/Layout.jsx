@@ -16,14 +16,14 @@ export default function Layout() {
   // Grabs the page name
   const url = window.location.href
   const urlSplit = url.split('/');
-  const location = urlSplit[urlSplit.length - 1]
+  const urlHash = urlSplit[urlSplit.length - 1].split('#')
+  const location = urlHash[0]
 
   // Sets the colour theme for each page
   // onClick functions on the page Links trigger updateTheme() and force a re-render with the corresponding theme
   const [theme, setTheme] = React.useState('default')
   function updateTheme() {
     setTheme((window.location.href).split('/')[urlSplit.length - 1])
-    console.log(theme, (window.location.href).split('/')[urlSplit.length - 1])
   }
 
   let earthImage = ``;
