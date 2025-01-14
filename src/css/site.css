@@ -96,8 +96,10 @@ a:hover {
 }
 
 .footer-top {
-    justify-content: center;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
     margin-top: 10px;
 }
 

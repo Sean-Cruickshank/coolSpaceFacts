@@ -3,36 +3,24 @@ import { Outlet, Link, NavLink } from "react-router-dom"
 import logo from '../../images/coollogo2.png'
 
 export default function Footer({updateTheme, location}) {
-  
-  //Highlights the active page in the footer menu
-  function footerSelect() {
-    const fileName = window.location.pathname;
-    if (fileName === '/') {
-        const webName = 'Home';
-        const footerSelect = document.querySelector(`.js-footer-link-${webName}`);
-        //footerSelect.classList.add('footer-link');
-    } else {
-        const webName = fileName.split(/(\\|\/)/g).pop();
-        //const footerSelect = document.querySelector(`.js-footer-link-${webName}`);
-        //footerSelect.classList.add('footer-link');
-    }
-    
-  }
 
-  const pageArray = [
-    {name: 'Home', url: '..'},
+  const pageArrayA = [
+    {name: 'Home', url: '/'},
     {name: 'Attributions', url: '/attributions'},
+  ]
+
+  const pageArrayB = [
     {name: 'Size', url: '/size'},
     {name: 'Distance', url: '/distance'},
     {name: 'Temperature', url: '/temperature'},
     {name: 'Speed', url: '/speed'}
   ]
 
-  const footerElement = pageArray.map((page) => {
+  const footerElementA = pageArrayA.map((page) => {
     return (
       <NavLink
         key={page.name}
-        className='link-a'
+        className={({isActive}) => isActive ? "link-a footer-link" : 'link-a' }
         to={page.url}
         onClick={updateTheme}
       >
@@ -41,14 +29,28 @@ export default function Footer({updateTheme, location}) {
     )
   })
 
-  footerSelect();
+  const footerElementB = pageArrayB.map((page) => {
+    return (
+      <NavLink
+        key={page.name}
+        className={({isActive}) => isActive ? "link-a footer-link" : 'link-a' }
+        to={page.url}
+        onClick={updateTheme}
+      >
+        {page.name.toUpperCase()}
+      </NavLink>
+    )
+  })
   
   return (
     <footer className={`footer text-muted footer-${location}`}>
       <div className="container-fluid">
           <div className="row">
               <div className="footer-top">
-                {footerElement}
+                {footerElementA}
+              </div>
+              <div className="footer-top">
+                {footerElementB}
               </div>
           </div>
           <div className="footer-bottom">

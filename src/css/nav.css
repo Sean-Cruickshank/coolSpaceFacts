@@ -169,7 +169,13 @@
     position: fixed;
     overflow-y: scroll;
     padding:4px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+    .nav-side-content::-webkit-scrollbar {
+        display: none;
+    }
 
 .nav-side-link {
     color: white;

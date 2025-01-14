@@ -41,11 +41,13 @@ export default function Sidenav({clock, location, updateTheme}) {
 	//Highlights the active card div and removes highlights from all others
 	function NavSideHighlight(index) {
 		const newCard = document.querySelector(`.card-${index}`);
-		const oldCard = Array.from(document.getElementsByClassName('js-nav-side-item'));
-		oldCard.forEach((card) => {
-			card.classList.remove('js-nav-side-item');
-		});
-		newCard.classList.add('js-nav-side-item');
+    if (newCard) {
+      const oldCard = Array.from(document.getElementsByClassName('js-nav-side-item'));
+      oldCard.forEach((card) => {
+        card.classList.remove('js-nav-side-item');
+      });
+      newCard.classList.add('js-nav-side-item');
+    }
 	}
   
   return (

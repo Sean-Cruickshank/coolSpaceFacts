@@ -24,6 +24,7 @@ export default function Layout() {
   const [theme, setTheme] = React.useState('default')
   function updateTheme() {
     setTheme((window.location.href).split('/')[urlSplit.length - 1])
+    window.scrollTo(0,0)
   }
 
   let earthImage = ``;
