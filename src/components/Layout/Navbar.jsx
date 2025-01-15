@@ -2,6 +2,30 @@ import { Outlet, Link, NavLink } from "react-router-dom"
 
 export default function Navbar({earthImage, location, updateTheme}) {
   
+  // Used to generate links for the navbar
+  const linkArray = [
+    {name: 'Size', url: '/size'},
+    {name: 'Distance', url: '/distance'},
+    {name: 'Temperature', url: '/temperature'},
+    {name: 'Speed', url: '/speed'}
+  ]
+
+  // Generates links based on the above array
+  const linkElement = linkArray.map((item) => {
+    return (
+      <li key={item.name} className="nav-item">
+        <NavLink
+          className={({isActive}) => isActive
+            ? "nav-link-current nav-link nav-top-link" 
+            : "nav-link nav-top-link"
+          }
+          to={item.url}
+          onClick={updateTheme}
+        >{item.name}</NavLink>
+      </li>
+    )
+  })
+
   return (
     <header>
       <nav className="navbar navbar-expand-sm navbar-toggleable-sm mb-3 fixed-top">
@@ -25,56 +49,8 @@ export default function Navbar({earthImage, location, updateTheme}) {
           </button>
 
           <ul className="navbar-nav flex-grow-1">
-              <li className="nav-item">
-                <NavLink
-                  className={({isActive}) => isActive
-                    ? "nav-link-current nav-link nav-top-link" 
-                    : "nav-link nav-top-link"
-                  }
-                  to="/size"
-                  onClick={updateTheme}
-                >Size</NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink
-                  className={({isActive}) => isActive
-                    ? "nav-link-current nav-link nav-top-link" 
-                    : "nav-link nav-top-link"
-                  }
-                  to="/distance"
-                  onClick={updateTheme}
-                >Distance</NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink
-                  className={({isActive}) => isActive
-                    ? "nav-link-current nav-link nav-top-link"
-                    : "nav-link nav-top-link"
-                  }
-                  to="/temperature"
-                  onClick={updateTheme}
-                >Temperature</NavLink>
-              </li>
-
-              <li className="nav-item">
-                <NavLink
-                  className={({isActive}) => isActive
-                    ? "nav-link-current nav-link nav-top-link" : "nav-link nav-top-link"
-                  }
-                  to="/speed"
-                  onClick={updateTheme}
-                >Speed</NavLink>
-              </li>
+            {linkElement}
             </ul>
-
-          {/* <div className="">
-            <NavLink to="/size">Size</NavLink>
-            <NavLink to="/distance">Distance</NavLink>
-            <NavLink to="/temperature">Temperature</NavLink>
-            <NavLink to="/speed">Speed</NavLink>
-          </div> */}
         </div>
       </nav>
     </header>

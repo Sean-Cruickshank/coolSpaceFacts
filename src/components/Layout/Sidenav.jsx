@@ -3,6 +3,7 @@ import { locationSelect } from "../../utils/compare";
 
 export default function Sidenav({clock, location, updateTheme}) {
   
+  // Grabs the correct data array based on the page url
   let cardList = locationSelect()
 
   //Generates IDs for each data entry based on index in the array
@@ -10,6 +11,8 @@ export default function Sidenav({clock, location, updateTheme}) {
 		return item.id = `card-${index}`;
 	})
 
+  // Generates the list of titles in the side nav
+  // First entry (card-0) handled seperately to ensure it is always highlighted when user is at the top of the page
   const sidebarElement = cardList.map((item) => {
     if (item.id === 'card-0') {
 			return (

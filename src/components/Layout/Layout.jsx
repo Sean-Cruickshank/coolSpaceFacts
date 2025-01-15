@@ -13,7 +13,7 @@ import Sidenav from "./Sidenav";
 
 export default function Layout() {
 
-  // Grabs the page name
+  // Grabs the page name from the URL
   const url = window.location.href
   const urlSplit = url.split('/');
   const urlHash = urlSplit[urlSplit.length - 1].split('#')
@@ -27,6 +27,7 @@ export default function Layout() {
     window.scrollTo(0,0)
   }
 
+  // Sets the Earth image based on the time of day
   let earthImage = ``;
   function setEarthImage(today) {
     const todayTime = today.format('HH');
@@ -44,9 +45,10 @@ export default function Layout() {
     }
     earthImage = <img id="nav-earth-image" src={imageRef} />;
   }
+  setEarthImage(dayjs())
 
-  const [clock, setClock] = React.useState('12:00PM')
-
+  // Refreshes the clock and saves it to state
+  const [clock, setClock] = React.useState(dayjs().format('h:mmA'))
   function clockRefresh() {
     const clockSet = dayjs();
     const clockFormat = clockSet.format('h:mmA');
@@ -56,7 +58,7 @@ export default function Layout() {
     }
   }
 
-  setEarthImage(dayjs())
+  // Runs the clock refresh once per second
   const clockInterval = setInterval(clockRefresh, 1000)
 
   return (

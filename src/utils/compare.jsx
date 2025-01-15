@@ -3,10 +3,7 @@ import { distanceList } from '../data/distancedata.js'
 import { temperatureList } from '../data/temperaturedata.js'
 import { speedList } from '../data/speeddata.js'
 
-// Grabs the page name
-
-// Grabs the corresponding data array for location
-
+// Grabs the corresponding data array for the page URL
 export function locationSelect() {
 	const location = window.location.href
 	let cardList = [];
@@ -23,39 +20,42 @@ export function locationSelect() {
 }
 
 export function getCompareData(location) {
+	// Calls the above function to get a data array
 	let cardList = locationSelect()
-	
-	let sidebarHTML = '';
+	// Used for displaying the fact count on page and alternating the image/factlist
 	let cardCount = 0;
+	// Used for generating keys
 	let factCount = 0;
-	
 	
 	//Generates HTML cards for each entry in cardList
 	const cardElement = cardList.map((item) => {
 		cardCount++
-		let factListHTML = '';
-		for (let i = 0; i < item.factList.length; i++) {
-			const fact = item.factList[i];
-			factListHTML += <p className="card-fact">{fact}</p>;
-		}
-	
+
+		// Generates the paragraphs for each fact in the factlist 
 		const factListElement = item.factList.map((fact) => {
 			return <p key={factCount++} className='card-fact'>{fact}</p>
 		})
 	
+		// Generates the Image and image caption
 		const cardImage =
 			<div className="col-lg-6 col-12">
-				<img className="card-image" src={item.image} title={`${item.imageDesc} by ${item.imageCaption}`} />
+				<img
+					className="card-image"
+					src={item.image}
+					title={`${item.imageDesc} by ${item.imageCaption}`}
+				/>
 				<p className="card-image-caption">{item.imageDesc}</p>
 			</div>
 	
+		// Generates the div for the factlist and inserts the paragraphs created above
 		const cardFacts = 
 		<div className="card-fact-container col-lg-6 col-12">
 			<h2>Facts:</h2>
 			<>{factListElement}</>
 		</div>
 	
-		let metricElement
+		// Generates the fact metric based on the active page
+		let metricElement;
 		if (location === 'size') {
 			metricElement = <p className="card-diameter">Diameter: {item.size}</p>
 		} else if (location === 'distance') {
@@ -66,6 +66,8 @@ export function getCompareData(location) {
 			metricElement = <p className="card-speed">Speed: {item.speed}</p>
 		}
 	
+		// Puts together the finished product
+		// Image and fact list alternate sides every other card
 		return (
 			<div key={item.id} id={item.id} className="compare-card">
 				<div className="container-fluid row-buffer row justify-content-around">

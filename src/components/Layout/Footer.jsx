@@ -4,19 +4,20 @@ import logo from '../../images/coollogo2.png'
 
 export default function Footer({updateTheme, location}) {
 
-  const pageArrayA = [
+  // Used for generating the top and bottom row of footer links, respectfully
+  const linkArrayTop = [
     {name: 'Home', url: '/'},
     {name: 'Attributions', url: '/attributions'},
   ]
-
-  const pageArrayB = [
+  const linkArrayBottom = [
     {name: 'Size', url: '/size'},
     {name: 'Distance', url: '/distance'},
     {name: 'Temperature', url: '/temperature'},
     {name: 'Speed', url: '/speed'}
   ]
 
-  const footerElementA = pageArrayA.map((page) => {
+  // Generates the links for the above arrays
+  function footerTemplate(page) {
     return (
       <NavLink
         key={page.name}
@@ -27,18 +28,17 @@ export default function Footer({updateTheme, location}) {
         {page.name.toUpperCase()}
       </NavLink>
     )
-  })
+  }
 
-  const footerElementB = pageArrayB.map((page) => {
+  //Converts the links into two seperate JSX elements
+  const footerElementTop = linkArrayTop.map((page) => {
     return (
-      <NavLink
-        key={page.name}
-        className={({isActive}) => isActive ? "link-a footer-link" : 'link-a' }
-        to={page.url}
-        onClick={updateTheme}
-      >
-        {page.name.toUpperCase()}
-      </NavLink>
+      footerTemplate(page)
+    )
+  })
+  const footerElementBottom = linkArrayBottom.map((page) => {
+    return (
+      footerTemplate(page)
     )
   })
   
@@ -47,10 +47,10 @@ export default function Footer({updateTheme, location}) {
       <div className="container-fluid">
           <div className="row">
               <div className="footer-top">
-                {footerElementA}
+                {footerElementTop}
               </div>
               <div className="footer-top">
-                {footerElementB}
+                {footerElementBottom}
               </div>
           </div>
           <div className="footer-bottom">
