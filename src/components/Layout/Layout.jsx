@@ -13,19 +13,26 @@ import Sidenav from "./Sidenav";
 
 export default function Layout() {
 
+  const [location, setLocation] = React.useState('')
+  
   // Grabs the page name from the URL
-  const url = window.location.href
-  const urlSplit = url.split('/');
-  const urlHash = urlSplit[urlSplit.length - 1].split('#')
-  const location = urlHash[0]
-
-  // Sets the colour theme for each page
-  // onClick functions on the page Links trigger updateTheme() and force a re-render with the corresponding theme
-  const [theme, setTheme] = React.useState('default')
-  function updateTheme() {
-    setTheme((window.location.href).split('/')[urlSplit.length - 1])
-    window.scrollTo(0,0)
+  function getLocation() {
+    const url = window.location.href.toLowerCase()
+    const urlSplit = url.split('/');
+    const urlHash = urlSplit[urlSplit.length - 1].split('#')
+    setLocation(urlHash[0])
   }
+  
+  function updateTheme() {
+    setLocation('placeholder')
+    setTimeout(() => {
+      window.scrollTo(0,0)
+    },50)
+  }
+
+  React.useEffect(() => {
+    getLocation()
+  },[location])
 
   // Sets the Earth image based on the time of day
   let earthImage = ``;

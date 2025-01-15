@@ -4,8 +4,8 @@ import { temperatureList } from '../data/temperaturedata.js'
 import { speedList } from '../data/speeddata.js'
 
 // Grabs the corresponding data array for the page URL
-export function locationSelect() {
-	const location = window.location.href
+export function dataSelect() {
+	const location = window.location.href.toLowerCase()
 	let cardList = [];
 	if (location.includes('size')) {
 		cardList = sizeList
@@ -21,7 +21,7 @@ export function locationSelect() {
 
 export function getCompareData(location) {
 	// Calls the above function to get a data array
-	let cardList = locationSelect()
+	let cardList = dataSelect()
 	// Used for displaying the fact count on page and alternating the image/factlist
 	let cardCount = 0;
 	// Used for generating keys
@@ -38,7 +38,7 @@ export function getCompareData(location) {
 	
 		// Generates the Image and image caption
 		const cardImage =
-			<div className="col-lg-6 col-12">
+			<div key={factCount++} className="col-lg-6 col-12">
 				<img
 					className="card-image"
 					src={item.image}
@@ -49,7 +49,7 @@ export function getCompareData(location) {
 	
 		// Generates the div for the factlist and inserts the paragraphs created above
 		const cardFacts = 
-		<div className="card-fact-container col-lg-6 col-12">
+		<div key={factCount++} className="card-fact-container col-lg-6 col-12">
 			<h2>Facts:</h2>
 			<>{factListElement}</>
 		</div>
@@ -83,6 +83,6 @@ export function getCompareData(location) {
 			</div>
 		)
 	})
-
+	// return <p>WIP</p>
 	return cardElement
 }

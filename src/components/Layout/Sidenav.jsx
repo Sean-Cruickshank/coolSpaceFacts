@@ -1,10 +1,10 @@
 import { Outlet, Link, NavLink } from "react-router-dom"
-import { locationSelect } from "../../utils/compare";
+import { dataSelect } from "../../utils/compare";
 
 export default function Sidenav({clock, location, updateTheme}) {
   
   // Grabs the correct data array based on the page url
-  let cardList = locationSelect()
+  let cardList = dataSelect()
 
   //Generates IDs for each data entry based on index in the array
   cardList.map((item, index) => {
