@@ -1,6 +1,9 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useOutletContext } from "react-router-dom"
 
 export default function Home() {
+  
+  const updateTheme = useOutletContext()
+  
   return (
     <div className="view-body">
       <div className="home-intro">
@@ -17,7 +20,7 @@ export default function Home() {
         </div>
 
         <div className="col-lg-5 col-12 home-card home-card-select">
-          <NavLink to="/size">
+          <NavLink onClick={updateTheme} to="/size">
             <div>
               <h2>Size</h2>
               <p>From satellites in orbit around the Earth all the way up to the biggest structures in the Universe</p>
@@ -27,7 +30,7 @@ export default function Home() {
         </div>
 
         <div className="col-lg-5 col-12 home-card home-card-select">
-          <NavLink to="/distance">
+          <NavLink onClick={updateTheme} to="/distance">
             <div>
               <h2>Distance</h2>
               <p>Categorises objects based on their distance from Earth. From our own solar system, to distant galaxies and beyond</p>
@@ -37,7 +40,7 @@ export default function Home() {
         </div>
 
         <div className="col-lg-5 col-12 home-card home-card-select">
-          <NavLink to="/temperature">
+          <NavLink onClick={updateTheme} to="/temperature">
             <div>
               <h2>Temperature</h2>
               <p>From the coldest reaches of deep space to the cores of the brightest stars, with some familiar places in between</p>
@@ -47,7 +50,7 @@ export default function Home() {
         </div>
 
         <div className="col-lg-5 col-12 home-card home-card-select">
-          <NavLink to="/speed">
+          <NavLink onClick={updateTheme} to="/speed">
             <div>
               <h2>Speed</h2>
               <p>This list begins with the slowest objects in our solar system and gradually builds up to near the speed of light</p>
@@ -57,7 +60,7 @@ export default function Home() {
         </div>
 
         <div className="col-lg-5 col-12 home-card home-card-select">
-          <NavLink to="/attributions">
+          <NavLink  onClick={updateTheme} to="/attributions">
             <div>
               <h2>Sources</h2>
               <p>This page uses images and data sourced from other websites</p>

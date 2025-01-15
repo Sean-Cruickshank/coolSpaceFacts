@@ -8,7 +8,7 @@ export default function Sidenav({clock, location, updateTheme}) {
 
   //Generates IDs for each data entry based on index in the array
   cardList.map((item, index) => {
-		return item.id = `card-${index}`;
+		return item.id = `card-${index + 1}`;
 	})
 
   // Generates the list of titles in the side nav
@@ -43,7 +43,7 @@ export default function Sidenav({clock, location, updateTheme}) {
 	
 	//Highlights the active card div and removes highlights from all others
 	function NavSideHighlight(index) {
-		const newCard = document.querySelector(`.card-${index}`);
+		const newCard = document.querySelector(`.card-${index + 1}`);
     if (newCard) {
       const oldCard = Array.from(document.getElementsByClassName('js-nav-side-item'));
       oldCard.forEach((card) => {

@@ -14,21 +14,25 @@
         margin-bottom: 15px;
     }
 
-.compare-intro-size {
-    color: mediumpurple;
-}
+    .compare-intro-error {
+        color: yellow;
+    }
 
-.compare-intro-distance {
-    color: maroon;
-}
+    .compare-intro-size {
+        color: mediumpurple;
+    }
 
-.compare-intro-temperature {
-    color: deepskyblue;
-}
+    .compare-intro-distance {
+        color: maroon;
+    }
 
-.compare-intro-speed {
-    color: limegreen;
-}
+    .compare-intro-temperature {
+        color: deepskyblue;
+    }
+
+    .compare-intro-speed {
+        color: limegreen;
+    }
 
     .compare-intro p {
         font-size: 2rem;

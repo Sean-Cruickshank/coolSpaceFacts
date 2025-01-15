@@ -1146,4 +1146,12 @@
         licence: '',
         licenceName: ''
     },
+    {
+        name: 'Error 404 - Image',
+        page: 'Error 404',
+        source: 'https://imgflip.com/memetemplate/155426328/Earth-Exploding',
+        sourceName: 'Earth Exploding Template',
+        licence: '',
+        licenceName: ''
+    }
     ]

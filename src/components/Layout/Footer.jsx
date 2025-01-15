@@ -57,7 +57,7 @@ export default function Footer({updateTheme, location}) {
               <a href="https://www.seancruickshank.co.nz/"><img src={logo} target="_blank" className="footer-logo" alt="Logo"/></a>
               <br />
               <br />
-              <p>Cool Space Facts &copy; 2024</p>
+              <p>Cool Space Facts &copy; 2025</p>
               <p>Website created by Sean Cruickshank</p>
               <br />
               <br />

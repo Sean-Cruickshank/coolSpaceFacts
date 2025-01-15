@@ -6,14 +6,17 @@ import { speedList } from '../data/speeddata.js'
 // Grabs the corresponding data array for the page URL
 export function dataSelect() {
 	const location = window.location.href.toLowerCase()
+	const url = window.location.href.toLowerCase()
+	const urlSplit = url.split('/');
+	const urlHash = urlSplit[urlSplit.length - 1].split('#')[0]
 	let cardList = [];
-	if (location.includes('size')) {
+	if (urlHash === 'size') {
 		cardList = sizeList
-	} else if (location.includes('distance')) {
+	} else if (urlHash === 'distance') {
 		cardList = distanceList
-	} else if (location.includes('temperature')) {
+	} else if (urlHash === 'temperature') {
 		cardList = temperatureList
-	} else if (location.includes('speed')) {
+	} else if (urlHash === 'speed') {
 		cardList = speedList
 	}
 	return cardList

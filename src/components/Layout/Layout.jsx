@@ -15,7 +15,7 @@ export default function Layout() {
 
   const [location, setLocation] = React.useState('')
   
-  // Grabs the page name from the URL
+  // Grabs the page name from the URL and saves it to storage
   function getLocation() {
     const url = window.location.href.toLowerCase()
     const urlSplit = url.split('/');
@@ -23,6 +23,8 @@ export default function Layout() {
     setLocation(urlHash[0])
   }
   
+  // onClick method for all NavLinks
+  // Sets the location state to a placeholder to trigger a rerender and sets user to the top of the page
   function updateTheme() {
     setLocation('placeholder')
     setTimeout(() => {
@@ -30,6 +32,7 @@ export default function Layout() {
     },50)
   }
 
+  // Resyncs the location state to the URL
   React.useEffect(() => {
     getLocation()
   },[location])
@@ -84,7 +87,7 @@ export default function Layout() {
 
       <div id="shared-layout-body" className="container-fluid">
         <main role="main" className="pb-3">
-            <Outlet />
+            <Outlet context={updateTheme} />
         </main>
       </div>
 
