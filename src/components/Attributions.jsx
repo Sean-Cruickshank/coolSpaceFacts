@@ -4,8 +4,13 @@ import { attributionsElement } from "../utils/attributions"
 
 export default function Attributions() {
 
-  const [radioFilter, setRadioFilter] = React.useState('name')
+  /* --- Radio Buttons --- */
+
+  // Represents the currently active radio button filter
+  // Also determines which table header should be bold down in the JSX
+  const [radioFilter, setRadioFilter] = React.useState('Name')
   
+  // Array used for generating the radio buttons
   const radioButtonArray = [
     { id: 1, name: 'Name', checked: true},
     { id: 2, name: 'Page', checked: false},
@@ -13,6 +18,8 @@ export default function Attributions() {
     { id: 4, name: 'Licence', checked: false}
   ]
 
+  // Generates the radio buttons via above array
+  // onClick method grabs the value of the selected button and saves it to state
   const radioButtonElement = radioButtonArray.map((button) => {
     return (
       <div className="col-6" key={button.id}>
@@ -26,8 +33,8 @@ export default function Attributions() {
               ? "checked"
               : ""}
             onClick={() => {
-              setRadioFilter(button.name)
-              attributionSearch()
+              const radioSelect = document.querySelector('input[name="search-filter"]:checked').value
+              setRadioFilter(radioSelect)
             }}
           />
           {button.name}
@@ -36,21 +43,35 @@ export default function Attributions() {
     )
   })
 
+  // Runs the search function anytime a filter is changed to avoid desync
+  React.useEffect(() => {
+    attributionSearch()
+  },[radioFilter])
+
+  /* --- Searchbar --- */
+
+  // Represents the current value of the searchbar
   const [inputValue, setInputValue] = React.useState('')
 
+  // Grabs the value of the searchbar and saves it to state
+  // Triggers onChange on the searchbar <input>
   function handleChange(event) {
     const {value} = event.currentTarget
     setInputValue(value)
-    attributionSearch()
   }
 
+  // Sets the value of the searchbar equal to state to ensure a single source of truth
+  // Runs the search function
+  // Runs anytime state is changed to avoid a desync
   React.useEffect(() => {
     document.querySelector('.myInput').value = inputValue
+    attributionSearch()
   },[inputValue])
+
+  /* --- Results Filter --- */
 
   //Enables searchbar functionality and filters results by radio button selected
   function attributionSearch() {
-
     let tr, td, i, txtValue;
     let input = inputValue
     let filter = input.toUpperCase();
@@ -67,7 +88,6 @@ export default function Attributions() {
       } else if (radioFilter === 'Licence') {
           td = tr[i].getElementsByTagName("td")[3];
       } 
-
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
