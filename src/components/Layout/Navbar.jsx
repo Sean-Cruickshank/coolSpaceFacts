@@ -44,7 +44,7 @@ export default function Navbar({earthImage, location, updateTheme}) {
             aria-expanded="false"
             aria-label="Toggle navigation">
             <div className="nav-icon">
-                <img src="/images/hamburger.png" alt="Logo" height="45" />
+                <img src="public/img/hamburger.png" alt="Logo" height="45" />
             </div>
           </button>
 

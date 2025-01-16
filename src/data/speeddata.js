@@ -2,7 +2,7 @@
     {
         title: 'Rotation of Venus',
         speed: '6.52km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/venus.jpg',
+        image: 'public/img/compare/venus.jpg',
         imageDesc: 'An image of Venus',
         imageCaption: 'NASA/JPL',
         factList: [
@@ -14,7 +14,7 @@
     {
         title: 'Rotation of Earth',
         speed: '1,600km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/earth_dusk_old.png',
+        image: 'public/img/compare/earth_dusk_old.png',
         imageDesc: 'An image of Earth',
         imageCaption: 'Pixabay',
         factList: [
@@ -25,7 +25,7 @@
     {
         title: 'Orbit of the Moon',
         speed: '3,683km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/moon_orbit.jpg',
+        image: 'public/img/compare/moon_orbit.jpg',
         imageDesc: 'An image of the Moon transiting the Earth',
         imageCaption: 'the National Oceanic and Atmospheric Administration (NOAA)',
         factList: [
@@ -36,7 +36,7 @@
     {
         title: 'Orbit of Pluto',
         speed: '17,096km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/pluto.jpg',
+        image: 'public/img/compare/pluto.jpg',
         imageDesc: 'An image of Pluto',
         imageCaption: 'NASA',
         factList: [
@@ -47,7 +47,7 @@
     {
         title: 'The International Space Station',
         speed: '28,000km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/iss.jpg',
+        image: 'public/img/compare/iss.jpg',
         imageDesc: 'A view of the International Space Station over Earth',
         imageCaption: 'NASA',
         factList: [
@@ -60,7 +60,7 @@
     {
         title: 'Rotation of Jupiter',
         speed: '43,000km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/jupiter.jpg',
+        image: 'public/img/compare/jupiter.jpg',
         imageDesc: 'An artists depiction of Jupiter',
         imageCaption: 'Planet Volumes',
         factList: [
@@ -72,7 +72,7 @@
     {
         title: 'Voyager 1',
         speed: '61,500km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/voyager1.jpg',
+        image: 'public/img/compare/voyager1.jpg',
         imageDesc: 'An artists depiction of Voyager 1 flying through space',
         imageCaption: 'NASA/JPL-Caltech',
         factList: [
@@ -85,7 +85,7 @@
     {
         title: 'Orbit of Earth',
         speed: '107,000km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/earth.jpg',
+        image: 'public/img/compare/earth.jpg',
         imageDesc: 'Cities of Earth at night',
         imageCaption: 'NASA',
         factList: [
@@ -97,7 +97,7 @@
     {
         title: 'Orbit of Venus',
         speed: '126,077km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/venus_orbit.jpg',
+        image: 'public/img/compare/venus_orbit.jpg',
         imageDesc: 'An image of Venus transiting the Sun',
         imageCaption: 'NASA Goddard',
         factList: [
@@ -108,7 +108,7 @@
     {
         title: 'Orbit of Mercury',
         speed: '170,505km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/mercury.jpg',
+        image: 'public/img/compare/mercury.jpg',
         imageDesc: 'An image of Mercury',
         imageCaption: 'NASA',
         factList: [
@@ -119,7 +119,7 @@
     {
         title: 'Parker Solar Probe',
         speed: '635,266km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/parker_solar_probe.jpg',
+        image: 'public/img/compare/parker_solar_probe.jpg',
         imageDesc: 'An artists depiction of the Parker Solar Probe approaching the Sun',
         imageCaption: 'NASA Goddard',
         factList: [
@@ -132,7 +132,7 @@
     {
         title: 'Orbit of the Sun',
         speed: '828,000km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/sun.jpg',
+        image: 'public/img/compare/sun.jpg',
         imageDesc: 'An image of the Sun',
         imageCaption: 'NASA',
         factList: [
@@ -144,7 +144,7 @@
     {
         title: 'S2',
         speed: '27,540,000km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/s2.jpg',
+        image: 'public/img/compare/s2.jpg',
         imageDesc: 'An illustration of S2 as it approaches Sagittarius A',
         imageCaption: 'ESO/M. Kornmesser',
         factList: [
@@ -157,7 +157,7 @@
     {
         title: 'PSR J1748-244ad',
         speed: '252,000,000km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/psr_j1748.jpg',
+        image: 'public/img/compare/psr_j1748.jpg',
         imageDesc: 'An image of PSR J1748-244ad',
         imageCaption: 'Zellfaze',
         factList: [
@@ -170,7 +170,7 @@
     {
         title: 'The Speed of Light',
         speed: '1,079,252,848km/h',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/light_speed.jpg',
+        image: 'public/img/compare/light_speed.jpg',
         imageDesc: 'An illustration of light speed',
         imageCaption: 'Mathew Schwartz',
         factList: [

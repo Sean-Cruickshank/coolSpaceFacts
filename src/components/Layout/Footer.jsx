@@ -1,7 +1,5 @@
 import { Outlet, Link, NavLink } from "react-router-dom"
 
-import logo from '../../images/coollogo2.png'
-
 export default function Footer({updateTheme, location}) {
 
   // Used for generating the top and bottom row of footer links, respectfully
@@ -54,7 +52,7 @@ export default function Footer({updateTheme, location}) {
               </div>
           </div>
           <div className="footer-bottom">
-              <a href="https://www.seancruickshank.co.nz/"><img src={logo} target="_blank" className="footer-logo" alt="Logo"/></a>
+              <a href="https://www.seancruickshank.co.nz/"><img src='public/img/coollogo2.png' target="_blank" className="footer-logo" alt="Logo"/></a>
               <br />
               <br />
               <p>Cool Space Facts &copy; 2025</p>

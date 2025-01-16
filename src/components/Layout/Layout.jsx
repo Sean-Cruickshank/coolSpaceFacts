@@ -2,11 +2,6 @@ import dayjs from "dayjs";
 import React from "react";
 import { Outlet, Link, NavLink, useParams } from "react-router-dom"
 
-import day from '../../images/earth-day.png'
-import night from '../../images/earth-night.png'
-import dawn from '../../images/earth-dawn.png'
-import dusk from '../../images/earth-dusk.png'
-
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Sidenav from "./Sidenav";
@@ -41,17 +36,17 @@ export default function Layout() {
   let earthImage = ``;
   function setEarthImage(today) {
     const todayTime = today.format('HH');
-    let imageRef = day
+    let imageRef = 'public/img/earth-day.png'
     if (todayTime >= 0 && todayTime < 6) {
-        imageRef = night
+        imageRef = 'public/img/earth-night.png'
     } else if (todayTime >= 6 && todayTime < 10) {
-        imageRef = dawn
+        imageRef = 'public/img/earth-dawn.png'
     } else if (todayTime >= 10 && todayTime < 17) {
-        imageRef = day
+        imageRef = 'public/img/earth-day.png'
     } else if (todayTime >= 17 && todayTime < 21) {
-        imageRef = dusk
+        imageRef = 'public/img/earth-dusk.png'
     } else if (todayTime >= 21) {
-        imageRef = night
+        imageRef = 'public/img/earth-night.png'
     }
     earthImage = <img id="nav-earth-image" src={imageRef} />;
   }

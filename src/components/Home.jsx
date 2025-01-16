@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className="view-body">
       <div className="home-intro">
-        <img className="home-bg-large" src="https://dqe1enhkuqw3t.cloudfront.net/home/banner_wide.png" />
-        <img className="home-bg-medium" src="https://dqe1enhkuqw3t.cloudfront.net/home/banner_tall.png" />
+        <img className="home-bg-large" src="public/img/banner_wide.png" />
+        <img className="home-bg-medium" src="public/img/banner_tall.png" />
       </div>
 
     <div className="home-body">

@@ -2,7 +2,7 @@
     {
         title: 'The Kármán Line',
         distance: '100km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/karman_line.jpg',
+        image: 'public/img/compare/karman_line.jpg',
         imageDesc: 'An image of the Thermosphere, where the Kármán Line is located',
         imageCaption: 'Daniel Olah',
         factList: [
@@ -13,7 +13,7 @@
     {
         title: 'Satellites',
         distance: '160km+',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/satellite.jpg',
+        image: 'public/img/compare/satellite.jpg',
         imageDesc: 'A satellite flying through the upper atmosphere',
         imageCaption: 'NASA',
         factList: [
@@ -26,7 +26,7 @@
     {
         title: 'The International Space Station',
         distance: '400km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/iss.jpg',
+        image: 'public/img/compare/iss.jpg',
         imageDesc: 'A view of the International Space Station over Earth',
         imageCaption: 'NASA',
         factList: [
@@ -39,7 +39,7 @@
     {
         title: 'The Moon',
         distance: '384,400km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/moon.jpg',
+        image: 'public/img/compare/moon.jpg',
         imageDesc: 'The Moon in waning gibbous',
         imageCaption: 'Ankit Raj',
         factList: [
@@ -52,7 +52,7 @@
     {
         title: 'The farthest distance a human has been from Earth',
         distance: '400,171km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/apollo_13.jpg',
+        image: 'public/img/compare/apollo_13.jpg',
         imageDesc: 'An image of the Apollo 13 service module',
         imageCaption: 'NASA',
         factList: [
@@ -63,7 +63,7 @@
     {
         title: 'James Webb Space Telescope',
         distance: '1,500,000km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/james_webb.jpg',
+        image: 'public/img/compare/james_webb.jpg',
         imageDesc: 'An image of the James Webb Space Telescope',
         imageCaption: 'NASA Goddard',
         factList: [
@@ -75,7 +75,7 @@
     {
         title: 'Venus',
         distance: '38,000,000km - 261,000,000km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/venus.jpg',
+        image: 'public/img/compare/venus.jpg',
         imageDesc: 'An image of Venus',
         imageCaption: 'NASA Goddard',
         factList: [
@@ -88,7 +88,7 @@
     {
         title: 'Mars',
         distance: '54,600,000km - 401,000,000km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/mars.jpg',
+        image: 'public/img/compare/mars.jpg',
         imageDesc: 'An image of Mars',
         imageCaption: 'NASA',
         factList: [
@@ -100,7 +100,7 @@
     {
         title: 'Mercury',
         distance: '82,200,000km - 222,000,000km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/mercury.jpg',
+        image: 'public/img/compare/mercury.jpg',
         imageDesc: 'An image of Mercury',
         imageCaption: 'NASA',
         factList: [
@@ -112,7 +112,7 @@
     {
         title: 'The Sun',
         distance: '147,290,000km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/sun.jpg',
+        image: 'public/img/compare/sun.jpg',
         imageDesc: 'An image of the Sun',
         imageCaption: 'NASA',
         factList: [
@@ -124,7 +124,7 @@
     {
         title: 'Orbit of Earth',
         distance: '940,000,000km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/earth.jpg',
+        image: 'public/img/compare/earth.jpg',
         imageDesc: 'Cities of Earth at night',
         imageCaption: 'NASA',
         factList: [
@@ -136,7 +136,7 @@
     {
         title: 'Jupiter',
         distance: '588,000,000km - 968,000,000km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/jupiter.jpg',
+        image: 'public/img/compare/jupiter.jpg',
         imageDesc: 'An artists depiction of Jupiter',
         imageCaption: 'Planet Volumes',
         factList: [
@@ -148,7 +148,7 @@
     {
         title: 'Titan',
         distance: '1.2 Billion km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/titan.jpg',
+        image: 'public/img/compare/titan.jpg',
         imageDesc: 'An image of Saturn\'s largest moon, Titan',
         imageCaption: 'NASA/JPL/Space Science Institute',
         factList: [
@@ -161,7 +161,7 @@
     {
         title: 'Saturn',
         distance: '1.2 Billion km - 1.67 Billion km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/saturn.jpg',
+        image: 'public/img/compare/saturn.jpg',
         imageDesc: 'An image of Saturn with rings',
         imageCaption: 'NASA/JPL',
         factList: [
@@ -173,7 +173,7 @@
     {
         title: 'Uranus',
         distance: '2.6 Billion km - 3.2 Billion km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/uranus.jpg',
+        image: 'public/img/compare/uranus.jpg',
         imageDesc: 'An artists depiction of Uranus with rings',
         imageCaption: 'Planet Volumes',
         factList: [
@@ -186,7 +186,7 @@
     {
         title: 'Neptune',
         distance: '4.3 Billion km - 4.54 Billion km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/neptune.jpg',
+        image: 'public/img/compare/neptune.jpg',
         imageDesc: 'An image of Neptune',
         imageCaption: 'NASA',
         factList: [
@@ -199,7 +199,7 @@
     {
         title: 'Pluto',
         distance: '4.28 Billion km - 4.67 Billion km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/pluto.jpg',
+        image: 'public/img/compare/pluto.jpg',
         imageDesc: 'An image of Pluto captured by New Horizons',
         imageCaption: 'NASA',
         factList: [
@@ -211,7 +211,7 @@
     {
         title: 'The Heliopause',
         distance: '18 Billion km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/heliopause.jpg',
+        image: 'public/img/compare/heliopause.jpg',
         imageDesc: 'An artists depiction of the heliopause',
         imageCaption: 'NASA/JPL-Caltech',
         factList: [
@@ -222,7 +222,7 @@
     {
         title: 'Voyager 1',
         distance: '24 Billion km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/voyager1.jpg',
+        image: 'public/img/compare/voyager1.jpg',
         imageDesc: 'An artists depiction of Voyager 1 flying through space',
         imageCaption: 'NASA/JPL-Caltech',
         factList: [
@@ -235,7 +235,7 @@
     {
         title: '1 Light Year',
         distance: '9,460,730,472,581km',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/light_speed.jpg',
+        image: 'public/img/compare/light_speed.jpg',
         imageDesc: 'An illustration of light speed',
         imageCaption: 'Mathew Schwartz',
         factList: [
@@ -246,7 +246,7 @@
     {
         title: 'The edge of the Solar System',
         distance: '1.586ly (15 Trillion km)',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/oort_cloud.jpg',
+        image: 'public/img/compare/oort_cloud.jpg',
         imageDesc: 'A logarithmic diagram of the Solar System, showing the scale of the Oort Cloud',
         imageCaption: 'NASA/JPL-Caltech',
         factList: [
@@ -258,7 +258,7 @@
     {
         title: 'Proxima Centauri',
         distance: '4.246ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/proxima_centauri.jpg',
+        image: 'public/img/compare/proxima_centauri.jpg',
         imageDesc: 'An image of Proxima Centauri',
         imageCaption: 'ESA/Hubble',
         factList: [
@@ -270,7 +270,7 @@
     {
         title: 'Betelgeuse',
         distance: '642.5ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/betelgeuse.jpg',
+        image: 'public/img/compare/betelgeuse.jpg',
         imageDesc: 'An image of Betelgeuse',
         imageCaption: 'ESA/Herschel/PACS/L. Decin et al.',
         factList: [
@@ -283,7 +283,7 @@
     {
         title: 'Gaia BH1',
         distance: '1,560ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/gaia_bh1.jpg',
+        image: 'public/img/compare/gaia_bh1.jpg',
         imageDesc: 'An artists depiction of the Gaia BH1 binary system',
         imageCaption: 'By International Gemini Observatory/NOIRLab/NSF/AURA/J. da Silva/Spaceengine/M. Zamani',
         factList: [
@@ -296,7 +296,7 @@
     {
         title: 'Canis Major Dwarf Galaxy',
         distance: '25,000ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/canis_major.jpg',
+        image: 'public/img/compare/canis_major.jpg',
         imageDesc: 'An image of dust clouds in the Canis Major constellation',
         imageCaption: 'NASA/JPL-Caltech/University of Wisconsin',
         factList: [
@@ -308,7 +308,7 @@
     {
         title: 'Sagittarius A',
         distance: '26,670ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/sagittarius.jpg',
+        image: 'public/img/compare/sagittarius.jpg',
         imageDesc: 'An illustration of a supermassive black hole like Sagittarius A',
         imageCaption: 'NASA/JPL-Caltech',
         factList: [
@@ -319,7 +319,7 @@
     {
         title: 'Andromeda',
         distance: '2,537,000ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/andromeda.jpg',
+        image: 'public/img/compare/andromeda.jpg',
         imageDesc: 'An image of the Andromeda galaxy',
         imageCaption: 'Guillero Ferla',
         factList: [
@@ -332,7 +332,7 @@
     {
         title: 'JADES-GS-z13-0',
         distance: '33.6 Billion ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/JADES_GS_z13_0.jpg',
+        image: 'public/img/compare/JADES_GS_z13_0.jpg',
         imageDesc: 'An image of JADES-GS-z13-0',
         imageCaption: 'By NASA, ESA, CSA, and STScI, M. Zamani (ESA/Webb), L. Hustak (STScI). Science: B. Robertson (UCSC), S. Tacchella (Cambridge), E. Curtis-Lake (Hertfordshire), S. Carniani (Scuola Normale Superiore), and the JADES Collaboration',
         factList: [
@@ -344,7 +344,7 @@
     {
         title: 'Edge of the Observable Universe',
         distance: '46.5 Billion ly',
-        image: 'https://dqe1enhkuqw3t.cloudfront.net/compare/observable_universe.jpg',
+        image: 'public/img/compare/observable_universe.jpg',
         imageDesc: 'An illustration of the observable universe',
         imageCaption: 'ESA/NASA/JPL-Caltech',
         factList: [
