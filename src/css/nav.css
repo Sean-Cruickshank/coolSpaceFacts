@@ -117,6 +117,11 @@
     color: limegreen !important;
 }
 
+.nav-container {
+    display: flex;
+    width: 100%;
+}
+
 /* Top Navbar Dropdown */
 
 .nav-link-alt {
@@ -377,8 +382,7 @@
 
         .nav-top li {
             border-radius: 0;
-            border-bottom: 2px solid #111;
-            margin: 0;
+            margin: 0 auto;
         }
 
             .nav-top li:last-child {
@@ -407,8 +411,28 @@
         border: solid 2px limegreen;
     }
 
+    .nav-link {
+        border-radius: 10px;
+    }
+
     .nav-link-current {
         background-color: #111 !important;
+    }
+
+    .nav-container {
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.5s ease;
+        -moz-transition: max-height 0.5s ease;
+        -o-transition: max-height 0.5s ease;
+        -ms-transition: max-height 0.5s ease;
+        transition: max-height 0.5s ease;
+    }
+
+    .nav-container-dropdown {
+        position: relative;
+        max-height: 200px;
+        
     }
 
     /* Side Navbar */

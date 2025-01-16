@@ -1,6 +1,7 @@
 import { Outlet, Link, NavLink } from "react-router-dom"
+import React from "react"
 
-export default function Navbar({earthImage, location, updateTheme}) {
+export default function Navbar({earthImage, location, updateTheme, toggleDropdown}) {
   
   // Used to generate links for the navbar
   const linkArray = [
@@ -38,19 +39,21 @@ export default function Navbar({earthImage, location, updateTheme}) {
           <button 
             className="navbar-toggler button"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target=".navbar-collapse"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+            onClick={toggleDropdown}
+          >
             <div className="nav-icon">
                 <img src="public/img/hamburger.png" alt="Logo" height="45" />
             </div>
           </button>
 
-          <ul className="navbar-nav flex-grow-1">
-            {linkElement}
+          <div className="nav-container d-sm-inline-flex justify-content-between">
+            <ul className="navbar-nav flex-grow-1">
+              {linkElement}
             </ul>
+          </div>
         </div>
       </nav>
     </header>

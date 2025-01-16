@@ -17,11 +17,15 @@ export default function Layout() {
     const urlHash = urlSplit[urlSplit.length - 1].split('#')
     setLocation(urlHash[0])
   }
+
+  /* --- Colour Theme --- */
   
   // onClick method for all NavLinks
   // Sets the location state to a placeholder to trigger a rerender and sets user to the top of the page
+  // Closes the dropdown nav if applicable
   function updateTheme() {
     setLocation('placeholder')
+    setDropdown(false)
     setTimeout(() => {
       window.scrollTo(0,0)
     },50)
@@ -31,6 +35,8 @@ export default function Layout() {
   React.useEffect(() => {
     getLocation()
   },[location])
+
+  /* --- Earth Image --- */
 
   // Sets the Earth image based on the time of day
   let earthImage = ``;
@@ -52,6 +58,8 @@ export default function Layout() {
   }
   setEarthImage(dayjs())
 
+  /* --- Clock --- */
+
   // Refreshes the clock and saves it to state
   const [clock, setClock] = React.useState(dayjs().format('h:mmA'))
   function clockRefresh() {
@@ -66,12 +74,32 @@ export default function Layout() {
   // Runs the clock refresh once per second
   const clockInterval = setInterval(clockRefresh, 1000)
 
+  /* --- Dropdown Nav --- */
+
+  // Toggle value for the dropdown navigation
+  const [dropdown, setDropdown] = React.useState(false)
+
+  // Toggle function for dropdown state, triggers on the 'compare' button in Navbar.jsx
+  function toggleDropdown() {
+    setDropdown((prev) => !prev)
+  }
+
+  // Assigns the css class to show or hide the dropdown list when the dropdown state is toggled
+  React.useEffect(() => {
+    if (dropdown) {
+      document.querySelector('.nav-container').classList.add('nav-container-dropdown')
+    } else {
+      document.querySelector('.nav-container').classList.remove('nav-container-dropdown')
+    }
+  },[dropdown])
+
   return (
     <>
       <Navbar
         earthImage={earthImage}
         location={location}
         updateTheme={updateTheme}
+        toggleDropdown={toggleDropdown}
       />
 
       <Sidenav
