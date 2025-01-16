@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className="view-body">
       <div className="home-intro">
-        <img className="home-bg-large" src="public/img/banner_wide.png" />
-        <img className="home-bg-medium" src="public/img/banner_tall.png" />
+        <img className="home-bg-large" src="img/banner_wide.png" />
+        <img className="home-bg-medium" src="img/banner_tall.png" />
       </div>
 
     <div className="home-body">
@@ -67,12 +67,6 @@ export default function Home() {
               <p>Credit for all work used can be found on the sources page</p>
             </div>
           </NavLink>
-        </div>
-
-        <div className="col-12 card-disclaimer home-card-disclaimer">
-          <h2>Disclaimer</h2>
-          <p>The information used on this website might not be accurate. Most data was sourced quickly and is really just there to fill out the website.</p>
-          <p>This website was created by Sean Cruickshank as part of my web design portfolio and is not intended for live use, but as a way to showcase and improve my web design skills</p>
         </div>
       </div>
     </div> 

@@ -42,17 +42,17 @@ export default function Layout() {
   let earthImage = ``;
   function setEarthImage(today) {
     const todayTime = today.format('HH');
-    let imageRef = 'public/img/earth-day.png'
+    let imageRef = 'img/earth-day.png'
     if (todayTime >= 0 && todayTime < 6) {
-        imageRef = 'public/img/earth-night.png'
+        imageRef = 'img/earth-night.png'
     } else if (todayTime >= 6 && todayTime < 10) {
-        imageRef = 'public/img/earth-dawn.png'
+        imageRef = 'img/earth-dawn.png'
     } else if (todayTime >= 10 && todayTime < 17) {
-        imageRef = 'public/img/earth-day.png'
+        imageRef = 'img/earth-day.png'
     } else if (todayTime >= 17 && todayTime < 21) {
-        imageRef = 'public/img/earth-dusk.png'
+        imageRef = 'img/earth-dusk.png'
     } else if (todayTime >= 21) {
-        imageRef = 'public/img/earth-night.png'
+        imageRef = 'img/earth-night.png'
     }
     earthImage = <img id="nav-earth-image" src={imageRef} />;
   }

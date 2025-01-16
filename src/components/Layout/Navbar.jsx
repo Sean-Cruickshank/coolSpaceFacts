@@ -45,7 +45,7 @@ export default function Navbar({earthImage, location, updateTheme, toggleDropdow
             onClick={toggleDropdown}
           >
             <div className="nav-icon">
-                <img src="public/img/hamburger.png" alt="Logo" height="45" />
+                <img src="img/hamburger.png" alt="Logo" height="45" />
             </div>
           </button>
 

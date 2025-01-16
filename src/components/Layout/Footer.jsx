@@ -19,7 +19,7 @@ export default function Footer({updateTheme, location}) {
     return (
       <NavLink
         key={page.name}
-        className={({isActive}) => isActive ? "link-a footer-link" : 'link-a' }
+        className={({isActive}) => isActive ? "footer-link active-footer-link" : 'footer-link' }
         to={page.url}
         onClick={updateTheme}
       >
@@ -52,11 +52,19 @@ export default function Footer({updateTheme, location}) {
               </div>
           </div>
           <div className="footer-bottom">
-              <a href="https://www.seancruickshank.co.nz/"><img src='public/img/coollogo2.png' target="_blank" className="footer-logo" alt="Logo"/></a>
+              <a
+                target='_blank'
+                href="https://www.seancruickshank.co.nz/"
+              >
+                <img
+                  src='img/coollogo2.png'  
+                  className="footer-logo" 
+                  alt="Logo"
+                />
+              </a>
               <br />
               <br />
-              <p>Cool Space Facts &copy; 2025</p>
-              <p>Website created by Sean Cruickshank</p>
+              <span>Website created by Sean Cruickshank &copy; 2025</span>
               <br />
               <br />
           </div>

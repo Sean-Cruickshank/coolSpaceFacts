@@ -2,7 +2,7 @@
     {
         title: 'Absolute Zero',
         temperature: '-273.15C',
-        image: 'public/img/compare/absolute_zero.jpg',
+        image: 'img/compare/absolute_zero.jpg',
         imageDesc: 'Frozen crystals of ice',
         imageCaption: 'erin mckenna',
         factList: [
@@ -13,7 +13,7 @@
     {
         title: 'Boomerang Nebula',
         temperature: '-272C',
-        image: 'public/img/compare/boomerang_nebula.jpg',
+        image: 'img/compare/boomerang_nebula.jpg',
         imageDesc: 'An image of the Boomerang Nebula',
         imageCaption: 'NRAO/AUI/NSF/NASA/STScI/JPL-Caltech',
         factList: [
@@ -24,7 +24,7 @@
     {
         title: 'Deep Space',
         temperature: '-270.425C',
-        image: 'public/img/compare/deep_space.jpg',
+        image: 'img/compare/deep_space.jpg',
         imageDesc: 'An image of space',
         imageCaption: 'NASA/JPL-Caltech',
         factList: [
@@ -35,7 +35,7 @@
     {
         title: 'Pluto',
         temperature: '-240C to -226C',
-        image: 'public/img/compare/pluto.jpg',
+        image: 'img/compare/pluto.jpg',
         imageDesc: 'An image of Pluto',
         imageCaption: 'NASA',
         factList: [
@@ -47,7 +47,7 @@
     {
         title: 'Ganymede',
         temperature: '-203C to -163C',
-        image: 'public/img/compare/ganymede.jpg',
+        image: 'img/compare/ganymede.jpg',
         imageDesc: 'An image of Jupiter\'s largest moon, Ganymede',
         imageCaption: 'NASA/JPL',
         factList: [
@@ -59,7 +59,7 @@
     {
         title: 'Titan',
         temperature: '-183.1C to -179.6C',
-        image: 'public/img/compare/titan.jpg',
+        image: 'img/compare/titan.jpg',
         imageDesc: 'An image of Saturn\'s largest moon, Titan',
         imageCaption: 'NASA/JPL/Space Science Institute',
         factList: [
@@ -72,7 +72,7 @@
     {
         title: 'Mars',
         temperature: '-153C to 20C',
-        image: 'public/img/compare/mars.jpg',
+        image: 'img/compare/mars.jpg',
         imageDesc: 'An image of Mars',
         imageCaption: 'NASA',
         factList: [
@@ -84,7 +84,7 @@
     {
         title: 'The Moon',
         temperature: '-130C to 120C',
-        image: 'public/img/compare/moon.jpg',
+        image: 'img/compare/moon.jpg',
         imageDesc: 'The Moon in waning gibbous',
         imageCaption: 'Ankit Raj',
         factList: [
@@ -97,7 +97,7 @@
     {
         title: 'Earth',
         temperature: '-89.2C to 56.67C',
-        image: 'public/img/compare/earth.jpg',
+        image: 'img/compare/earth.jpg',
         imageDesc: 'Cities of Earth at night',
         imageCaption: 'NASA',
         factList: [
@@ -109,7 +109,7 @@
     {
         title: 'Mercury',
         temperature: '167C',
-        image: 'public/img/compare/mercury.jpg',
+        image: 'img/compare/mercury.jpg',
         imageDesc: 'An image of Mercury',
         imageCaption: 'NASA',
         factList: [
@@ -121,7 +121,7 @@
     {
         title: 'Venus',
         temperature: '464C',
-        image: 'public/img/compare/venus.jpg',
+        image: 'img/compare/venus.jpg',
         imageDesc: 'An image of Venus',
         imageCaption: 'NASA',
         factList: [
@@ -134,7 +134,7 @@
     {
         title: 'Red Dwarf Stars',
         temperature: '2,100C to 3,500C',
-        image: 'public/img/compare/red_dwarf.jpg',
+        image: 'img/compare/red_dwarf.jpg',
         imageDesc: 'An illustration of a binary Red Dwarf system',
         imageCaption: 'NASA Goddard',
         factList: [
@@ -146,7 +146,7 @@
     {
         title: 'KELT-9b',
         temperature: '4,327C',
-        image: 'public/img/compare/kelt_9b.jpg',
+        image: 'img/compare/kelt_9b.jpg',
         imageDesc: 'An artists interpretation of KELT-9b',
         imageCaption: 'NASA/JPL-Caltech',
         factList: [
@@ -159,7 +159,7 @@
     {
         title: 'Yellow Stars',
         temperature: '5,100C to 5,700C',
-        image: 'public/img/compare/sun.jpg',
+        image: 'img/compare/sun.jpg',
         imageDesc: 'An image of our favourite yellow star, the Sun',
         imageCaption: 'NASA',
         factList: [
@@ -171,7 +171,7 @@
     {
         title: 'Centre of the Earth',
         temperature: '4,400C to 6,000C',
-        image: 'public/img/compare/earth_core.jpg',
+        image: 'img/compare/earth_core.jpg',
         imageDesc: 'An illustration of the different layers of Earth',
         imageCaption: 'CharlesC',
         factList: [
@@ -183,7 +183,7 @@
     {
         title: 'White Dwarf Stars',
         temperature: '20,000C',
-        image: 'public/img/compare/white_dwarf.jpg',
+        image: 'img/compare/white_dwarf.jpg',
         imageDesc: 'An illustration of a White Dwarf Star surrounded by a cloud of debris',
         imageCaption: 'NASA’s Goddard Space Flight Center/Scott Wiessinger',
         factList: [
@@ -195,7 +195,7 @@
     {
         title: 'Blue Stars',
         temperature: '33,000C to 45,000C',
-        image: 'public/img/compare/blue_star.jpg',
+        image: 'img/compare/blue_star.jpg',
         imageDesc: 'A cluster of blue stars, surrounded by cosmic dust',
         imageCaption: 'Robert Gendler',
         factList: [
@@ -207,7 +207,7 @@
     {
         title: 'Centre of the Sun',
         temperature: '15,000,000C',
-        image: 'public/img/compare/sun_core.jpg',
+        image: 'img/compare/sun_core.jpg',
         imageDesc: 'An illustration of the different layers of the Sun',
         imageCaption: 'Image Editor',
         factList: [
@@ -218,7 +218,7 @@
     {
         title: 'Supernovae',
         temperature: '100,000,000,000C',
-        image: 'public/img/compare/supernovae.jpg',
+        image: 'img/compare/supernovae.jpg',
         imageDesc: 'The remnants of a supernova',
         imageCaption: 'NASA Goddard',
         factList: [
@@ -231,7 +231,7 @@
     {
         title: 'Core of a Neutron Star',
         temperature: '1,000,000,000,000C',
-        image: 'public/img/compare/neutron_star.jpg',
+        image: 'img/compare/neutron_star.jpg',
         imageDesc: 'An illustration of a neutron star emitting electromagnetic radiation',
         imageCaption: 'Scott Wiessinger, Francis Reddy, Jeanette Kazmierczak',
         factList: [

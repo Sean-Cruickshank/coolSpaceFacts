@@ -20,7 +20,7 @@ export const sourcesElement = sourcesList.map((item) => {
                         {item.sourceName}
                     </a>
                     {item.sourceB
-                        ? <a target='blank' href={item.sourceB}>
+                        ? <a target='_blank' href={item.sourceB}>
                          {item.sourceBName}</a>
                         : null}
                 </div>

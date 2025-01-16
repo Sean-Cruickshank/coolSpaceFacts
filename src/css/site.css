@@ -18,35 +18,14 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.error-page p, .compare-intro p {
+    font-size: clamp(12px, 10px + 1.2vw, 32px);
+}
+
 h1 {
     font-family: 'OCR A';
-    font-size: 8rem;
+    font-size: clamp(32px, 18px + 6vw, 120px);
     margin-bottom: 15px;
-}
-
-/* Presets */
-
-.header-a {
-    color: white;
-    font-family: 'OCR A';
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 15rem;
-    width: 100%;
-}
-
-.header-b {
-    color: white;
-    font-family: 'OCR A';
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 9rem;
-}
-
-.link-a {
-    font-family: 'OCR A';
-    text-decoration: none;
-    color: white;
 }
 
 a {
@@ -57,21 +36,7 @@ a:hover {
     color: darkgoldenrod;
 }
 
-.footer-size a:hover {
-    color: mediumpurple;
-}
-
-.footer-distance a:hover {
-    color: maroon;
-}
-
-.footer-temperature a:hover {
-    color: deepskyblue;
-}
-
-.footer-speed a:hover {
-    color: limegreen;
-}
+/* Presets */
 
 /* Shared Layout */
 
@@ -86,7 +51,7 @@ a:hover {
 }
 
 .view-body {
-    background-image: url(public/img/back.png);
+    background-image: url(img/back.png);
     background-size: 25%;
     min-height: 800px;
     padding: 30px;
@@ -113,6 +78,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     margin-top: 10px;
+    font-size: clamp(11px, 5px + 1vw, 14px);
 }
 
 .footer-top a {
@@ -128,26 +94,48 @@ a:hover {
     height: 45px;
 }
 
-.footer-link {
+.active-footer-link {
     text-transform: uppercase;
     color: black !important;
     background-color: darkgoldenrod;
     border-radius: 5px;
 }
 
-.footer-size .footer-link {
+.footer-link {
+    font-family: 'OCR A';
+    text-decoration: none;
+    color: white;
+}
+
+.footer-size a:hover {
+    color: mediumpurple;
+}
+
+.footer-distance a:hover {
+    color: maroon;
+}
+
+.footer-temperature a:hover {
+    color: deepskyblue;
+}
+
+.footer-speed a:hover {
+    color: limegreen;
+}
+
+.footer-size .active-footer-link {
     background-color: mediumpurple;
 }
 
-.footer-distance .footer-link {
+.footer-distance .active-footer-link {
     background-color: maroon;
 }
 
-.footer-temperature .footer-link {
+.footer-temperature .active-footer-link {
     background-color: deepskyblue;
 }
 
-.footer-speed .footer-link {
+.footer-speed .active-footer-link {
     background-color: limegreen;
 }
 
@@ -157,7 +145,7 @@ a:hover {
     color: dimgrey;
 }
 
-    .footer-link:hover, .footer-sublink:hover {
+    .active-footer-link:hover, .footer-sublink:hover {
         color: white;
     }
 
@@ -174,54 +162,23 @@ a:hover {
 /* @media screen size - Large */
 @media only screen and (min-width: 992px) and (max-width: 1199.999px) {
     
-    .header-a {
-        font-size: 6.5rem;
-    }
-
-    .header-b {
-        font-size: 2.5rem;
-    }
 }
 
 /* @media screen size - Medium */
 @media only screen and (min-width: 768px) and (max-width: 991.999px) {
-
-    h1 {
-        font-size: 6rem;
-    }
     
     .view-body {
         padding: 4px;
         padding-top: 30px;
-    }
-    
-    .header-a {
-        font-size: 6rem;
-    }
-
-    .header-b {
-        font-size: 2.25rem;
     }
 }
 
 /* @media screen size - Small */
 @media only screen and (min-width: 576px) and (max-width: 767.999px) {
-
-    h1 {
-        font-size: 4.25rem;
-    }
     
     .view-body {
         padding: 4px;
         padding-top: 30px;
-    }
-
-    .header-a {
-        font-size: 4.5rem;
-    }
-
-    .header-b {
-        font-size: 1.75rem;
     }
     
     #shared-layout-body {
@@ -236,22 +193,10 @@ a:hover {
 
 /* @media screen size - Extra Small */
 @media only screen and (max-width: 575.999px) {
-
-    h1 {
-        font-size: 3rem;
-    }
     
     .view-body {
         padding: 4px;
         padding-top: 30px;
-    }
-
-    .header-a {
-        font-size: 3.25rem;
-    }
-
-    .header-b {
-        font-size: 1.25rem;
     }
 
     #shared-layout-body {
@@ -266,18 +211,21 @@ a:hover {
     }
 
     .footer-top {
-        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
     }
 
-        .footer-top a {
-            padding: 10px;
-        }
+    .footer-top a {
+        padding: 10px;
+        margin: 2.5px;
+    }
 
     .footer-logo {
         height: 35px;
     }
 
-    .footer-bottom p {
+    .footer-bottom span {
         font-size: 0.8rem;
     }
 }

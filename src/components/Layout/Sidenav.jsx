@@ -38,7 +38,6 @@ export default function Sidenav({clock, location, updateTheme}) {
     if (position < cardList.length) {
         NavSideHighlight(position);
     }
-    console.log(Math.floor((scrollY) / 1000))
 
 	});
 	
