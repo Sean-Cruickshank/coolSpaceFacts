@@ -1,5 +1,5 @@
-import '../utils/compare.jsx'
-import { getCompareData } from '../utils/compare.jsx'
+import '../../utils/compare.jsx'
+import { getCompareData } from '../../utils/compare.jsx'
 
 export default function Speed() {
   const cardElement = getCompareData('speed')

@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Layout from "./components/Layout/Layout.jsx"
+import Layout from "./components/layout/Layout.jsx"
 import Home from "./components/Home.jsx"
-import Size from './components/Size.jsx'
-import Distance from './components/Distance.jsx'
-import Temperature from './components/Temperature.jsx'
-import Speed from './components/Speed.jsx'
+import Size from './components/compare/Size.jsx'
+import Distance from './components/compare/Distance.jsx'
+import Temperature from './components/compare/Temperature.jsx'
+import Speed from './components/compare/Speed.jsx'
 import Sources from './components/Sources.jsx'
 import Error404 from './components/Error404.jsx'
 
