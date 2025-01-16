@@ -1,4 +1,4 @@
-﻿export const attributionsList = [
+﻿export const sourcesList = [
     {
         name: 'Earth - Image',
         page: 'Size, Distance, Temperature, Speed',

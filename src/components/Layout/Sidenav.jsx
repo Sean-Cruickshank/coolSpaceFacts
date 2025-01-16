@@ -70,7 +70,7 @@ export default function Sidenav({clock, location, updateTheme}) {
           className={({isActive}) => isActive
           ? "nav-side-link-current nav-link nav-side-link" : "nav-link nav-side-link"
         }
-          to="/attributions"
+          to="/sources"
           onClick={updateTheme}
           >Sources</NavLink>
         <div className="row justify-content-around">

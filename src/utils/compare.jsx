@@ -76,8 +76,8 @@ export function getCompareData(location) {
 				<div className="container-fluid row-buffer row justify-content-around">
 	
 					<div className="col-10 card-title-container">
-						<h1 className="card-count">- {cardCount} -</h1>
-						<h1 className="card-title">{item.title}</h1>
+						<h2 className="card-count">- {cardCount} -</h2>
+						<h2 className="card-title">{item.title}</h2>
 						{metricElement}
 					</div>
 					{cardCount % 2 === 0 ? cardFacts : cardImage}

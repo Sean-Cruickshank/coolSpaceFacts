@@ -60,11 +60,11 @@ export default function Home() {
         </div>
 
         <div className="col-lg-5 col-12 home-card home-card-select">
-          <NavLink  onClick={updateTheme} to="/attributions">
+          <NavLink  onClick={updateTheme} to="/sources">
             <div>
               <h2>Sources</h2>
               <p>This page uses images and data sourced from other websites</p>
-              <p>Credit for all work used can be found on the attributions page</p>
+              <p>Credit for all work used can be found on the sources page</p>
             </div>
           </NavLink>
         </div>

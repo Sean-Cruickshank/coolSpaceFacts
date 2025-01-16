@@ -1,8 +1,8 @@
 import React from "react"
 
-import { attributionsElement } from "../utils/attributions"
+import { sourcesElement } from "../utils/sources"
 
-export default function Attributions() {
+export default function Sources() {
 
   /* --- Radio Buttons --- */
 
@@ -23,7 +23,7 @@ export default function Attributions() {
   const radioButtonElement = radioButtonArray.map((button) => {
     return (
       <div className="col-6" key={button.id}>
-        <label className='attribution-radio'>
+        <label className='source-radio'>
           <input
             id={`radio-${button.name}`}
             type="radio"
@@ -45,7 +45,7 @@ export default function Attributions() {
 
   // Runs the search function anytime a filter is changed to avoid desync
   React.useEffect(() => {
-    attributionSearch()
+    sourceSearch()
   },[radioFilter])
 
   /* --- Searchbar --- */
@@ -65,17 +65,17 @@ export default function Attributions() {
   // Runs anytime state is changed to avoid a desync
   React.useEffect(() => {
     document.querySelector('.myInput').value = inputValue
-    attributionSearch()
+    sourceSearch()
   },[inputValue])
 
   /* --- Results Filter --- */
 
   //Enables searchbar functionality and filters results by radio button selected
-  function attributionSearch() {
+  function sourceSearch() {
     let tr, td, i, txtValue;
     let input = inputValue
     let filter = input.toUpperCase();
-    let table = document.getElementById("attributionsTable");
+    let table = document.getElementById("sourcesTable");
     tr = table.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
@@ -101,14 +101,17 @@ export default function Attributions() {
   
   return (
     <div className="view-body">
-      <div className="row container-fluid attributions-intro">
-        <div className="col-sm-6 col-12 attribution-radio-select">
+      <div className="sources-intro">
+        <h1>Sources</h1>
+      </div>
+      <div className="row container-fluid sources-control-panel">
+        <div className="col-sm-6 col-12 source-radio-select">
           <h3>Sort by:</h3>
           <div className="row">
             {radioButtonElement}
           </div>
         </div>
-        <div className="col-sm-6 col-12 attribution-searchbar">
+        <div className="col-sm-6 col-12 source-searchbar">
           <h3>Search:</h3>
           <input
             className="myInput"
@@ -121,36 +124,36 @@ export default function Attributions() {
         </div>
       </div>
 
-      <div className="attributions-table">
-        <table id="attributionsTable" className="attributionsTable">
+      <div className="sources-table">
+        <table id="sourcesTable" className="sourcesTable">
           <tbody>
             <tr>
               <th className={radioFilter === 'Name'
-                ? 'attributions-table-pages tableHeaderBold'
-                : 'attributions-table-pages'
+                ? 'sources-table-pages tableHeaderBold'
+                : 'sources-table-pages'
               }
               >Name:</th>
 
               <th className={radioFilter === 'Page'
-                ? 'attributions-table-pages tableHeaderBold'
-                : 'attributions-table-pages'
+                ? 'sources-table-pages tableHeaderBold'
+                : 'sources-table-pages'
               }
               >Pages:</th>
 
               <th className={radioFilter === 'Source'
-                ? 'attributions-table-pages tableHeaderBold'
-                : 'attributions-table-pages'
+                ? 'sources-table-pages tableHeaderBold'
+                : 'sources-table-pages'
               }
               >Source:</th>
 
               <th className={radioFilter === 'Licence'
-                ? 'attributions-table-pages tableHeaderBold'
-                : 'attributions-table-pages'
+                ? 'sources-table-pages tableHeaderBold'
+                : 'sources-table-pages'
               }
               >Licence:</th>
 
             </tr>
-            {attributionsElement}
+            {sourcesElement}
           </tbody>
         </table>
       </div>

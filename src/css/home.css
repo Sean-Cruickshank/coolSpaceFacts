@@ -94,14 +94,14 @@
         color: lightcoral;
     }
 
-/* Attributions Page */
+/* Sources Page */
 
-.attributions-disclaimer {
+.sources-intro {
+    color: darkgoldenrod;
     text-align: center;
-    margin-top: 10px;
 }
 
-.attributions-intro {
+.sources-control-panel {
     background-color: rgba(0,0,0,0.8);
     margin: 0;
     margin-top: 10px;
@@ -110,28 +110,28 @@
     border-radius: 10px;
 }
 
-.attribution-radio-select, .attribution-searchbar {
+.source-radio-select, .source-searchbar {
     text-align: center;
 }
 
-    .attribution-radio-select h3, .attribution-searchbar h3 {
+    .source-radio-select h3, .source-searchbar h3 {
         color: white;
         text-transform: uppercase;
         font-family: 'OCR A';
         font-size: 2rem;
     }
 
-.attribution-radio {
+.source-radio {
     color: white;
     padding: 4px;
     font-size: 1.2rem;
 }  
 
-    .attribution-searchbar {
+    .source-searchbar {
         justify-content: right;
     }
 
-.attributions-table {
+.sources-table {
     margin-top: 10px;
     background-color: rgba(0,0,0,0.5);
     border: solid 2px #111;
@@ -140,7 +140,7 @@
     font-size: 1.5rem;
 }
 
-    .attributions-table th {
+    .sources-table th {
         background-color: black;
         padding: 4px;
         padding-left: 10px;
@@ -150,17 +150,17 @@
         font-size: 1.8rem;
     }
 
-    .attributions-table td {
+    .sources-table td {
         padding: 4px;
         padding-left: 10px;
     }
 
-    .attributions-table tr {
+    .sources-table tr {
         background-color: rgba(50,50,50,0.5);
         height: 50px;
     }
 
-    .attributions-table tr:nth-child(odd) {
+    .sources-table tr:nth-child(odd) {
         background-color: rgba(25,25,25,0.5);
     }
 
@@ -178,7 +178,7 @@
     margin: 10px;
 }
 
-#attributionsTable {
+#sourcesTable {
     color: white;
     width: 100%;
     word-wrap: break-word;
@@ -218,13 +218,13 @@
         font-size: 3rem;
     }
 
-    /* Attributions Page */
+    /* Sources Page */
 
-    .attributions-table {
+    .sources-table {
         font-size: 1.3rem;
     }
 
-        .attributions-table th {
+        .sources-table th {
             font-size: 1.5rem;
         }
 }
@@ -264,13 +264,13 @@
         font-size: 3.5rem;
     }
 
-    /* Attributions Page */
+    /* Sources Page */
 
-    .attributions-table {
+    .sources-table {
         font-size: 1.1rem;
     }
 
-        .attributions-table th {
+        .sources-table th {
             font-size: 1.3rem;
         }
 }
@@ -310,24 +310,24 @@
         font-size: 2.7rem;
     }
 
-    /* Attributions Page */
+    /* Sources Page */
 
-    .attributions-table {
+    .sources-table {
         font-size: 0.9rem;
     }
 
-        .attributions-table th {
+        .sources-table th {
             padding: 4px;
             padding-left: 5px;
             font-size: 1.1rem;
         }
 
-        .attributions-table td {
+        .sources-table td {
             padding: 4px;
             padding-left: 5px;
         }
 
-    .attribution-radio-select h3, .attribution-searchbar h3 {
+    .source-radio-select h3, .source-searchbar h3 {
         font-size: 1.6rem;
     }
 }
@@ -372,24 +372,24 @@
         min-height: 300px;
     }
 
-    /* Attributions Page */
+    /* Sources Page */
 
-    .attributions-table {
+    .sources-table {
         font-size: 0.7rem;
     }
 
-        .attributions-table th {
+        .sources-table th {
             padding: 4px;
             padding-left: 5px;
             font-size: 0.9rem;
         }
 
-        .attributions-table td {
+        .sources-table td {
             padding: 4px;
             padding-left: 5px;
         }
 
-    .attribution-radio-select h3, .attribution-searchbar h3 {
+    .source-radio-select h3, .source-searchbar h3 {
         font-size: 1.6rem;
     }
 

@@ -1,15 +1,15 @@
-﻿import { attributionsList } from '../data/attributionsdata.js';
+﻿import { sourcesList } from '../data/sourcesdata.js';
 
-//Sorts attributionsList alphabetically
-attributionsList.sort((a, b) => a.name.localeCompare(b.name))
+//Sorts sourcesList alphabetically
+sourcesList.sort((a, b) => a.name.localeCompare(b.name))
 
 //Generates IDs for each data entry based on index in the array
-attributionsList.map((item, index) => {
+sourcesList.map((item, index) => {
     return item.id = `card-${index}`;
 })
 
-//Populates attributionsTable with data from attributionsdata.js
-export const attributionsElement = attributionsList.map((item) => {
+//Populates sourcesTable with data from sourcesdata.js
+export const sourcesElement = sourcesList.map((item) => {
     return (
         <tr key={item.id}>
             <td><div>{item.name}</div></td>

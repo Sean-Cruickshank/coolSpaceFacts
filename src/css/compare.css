@@ -8,16 +8,6 @@
     height: 500px;
 }
 
-    .compare-intro h1 {
-        font-family: 'OCR A';
-        font-size: 8rem;
-        margin-bottom: 15px;
-    }
-
-    .compare-intro-error {
-        color: yellow;
-    }
-
     .compare-intro-size {
         color: mediumpurple;
     }
@@ -173,10 +163,6 @@
     .compare-intro {
     }
 
-        .compare-intro h1 {
-            font-size: 6rem;
-        }
-
         .compare-intro p {
             font-size: 1.6rem;
         }
@@ -219,10 +205,6 @@
 @media only screen and (min-width: 576px) and (max-width: 767.999px) {
     .compare-intro {
     }
-
-        .compare-intro h1 {
-            font-size: 4.25rem;
-        }
 
         .compare-intro p {
             font-size: 1.3rem;
@@ -268,10 +250,6 @@
 @media only screen and (max-width: 575.999px) {
     .compare-intro {
     }
-
-        .compare-intro h1 {
-            font-size: 3rem;
-        }
 
         .compare-intro p {
             font-size: 1.2rem;

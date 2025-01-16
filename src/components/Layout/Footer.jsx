@@ -5,7 +5,7 @@ export default function Footer({updateTheme, location}) {
   // Used for generating the top and bottom row of footer links, respectfully
   const linkArrayTop = [
     {name: 'Home', url: '/'},
-    {name: 'Attributions', url: '/attributions'},
+    {name: 'Sources', url: '/sources'},
   ]
   const linkArrayBottom = [
     {name: 'Size', url: '/size'},
