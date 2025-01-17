@@ -16,13 +16,21 @@ export const sourcesElement = sourcesList.map((item) => {
             <td><div>{item.page}</div></td>
             <td>
                 <div>
-                    <a target='_blank' href={item.source}>
-                        {item.sourceName}
-                    </a>
                     {item.sourceB
-                        ? <a target='_blank' href={item.sourceB}>
-                         {item.sourceBName}</a>
-                        : null}
+                        ? <p>
+                            <a
+                                target='_blank'
+                                href={item.source}
+                            >{item.sourceName}</a> / <a
+                                target='_blank'
+                                href={item.sourceB}
+                            >{item.sourceBName}</a>
+                        </p>
+                        : <a
+                            target='_blank'
+                            href={item.source}
+                        >{item.sourceName}</a>
+                    }
                 </div>
             </td>
             <td>
