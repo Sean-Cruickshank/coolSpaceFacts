@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Layout from "src/components/layout/Layout.jsx"
+import Layout from "/src/components/layout/Layout.jsx"
 import Home from "./components/Home.jsx"
 import Size from './components/compare/Size.jsx'
 import Distance from './components/compare/Distance.jsx'
