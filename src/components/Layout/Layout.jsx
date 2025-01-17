@@ -93,6 +93,22 @@ export default function Layout() {
     }
   },[dropdown])
 
+  const [page, setPage] = React.useState('')
+  
+  function pageRefresh() {
+    const currentPage = window.location.href;
+    if (page !== currentPage) {
+      setPage(currentPage)
+      getLocation()
+      console.log('test')
+      clearInterval(pageInterval)
+    }
+  }
+
+  const pageInterval = setInterval(() => {
+    pageRefresh()
+  },1000)
+
   return (
     <>
       <Navbar

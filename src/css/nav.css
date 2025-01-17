@@ -77,6 +77,28 @@
                 color: white;
             }
 
+            /* Sets theme colour when nav items are in focus and highlighted */
+
+            .nav-top li a:hover:focus {
+                color: darkgoldenrod;
+            }
+
+            .nav-top-size li a:hover:focus {
+                color: mediumpurple;
+            }
+            
+            .nav-top-distance li a:hover:focus {
+                color: maroon;
+            }
+            
+            .nav-top-temperature li a:hover:focus {
+                color: deepskyblue;
+            }
+            
+            .nav-top-speed li a:hover:focus {
+                color: limegreen;
+            }
+
 .nav-top-size li a:hover {
     color: mediumpurple;
 }
