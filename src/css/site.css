@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'OCR A';
+    src: local('OCR A'), url(../fonts/OCR-a___.ttf) format('truetype');
+  }
+
 html {
   font-size: 14px;
   position: relative;
