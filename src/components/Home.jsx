@@ -24,7 +24,7 @@ export default function Home() {
             <div>
               <h2>Size</h2>
               <p>From satellites in orbit around the Earth all the way up to the biggest structures in the Universe</p>
-              <img className="home-card-image" src="https://dqe1enhkuqw3t.cloudfront.net/compare/andromeda.jpg" />
+              <img className="home-card-image" src="img/compare/andromeda.jpg" />
             </div>
           </NavLink>
         </div>
@@ -34,7 +34,7 @@ export default function Home() {
             <div>
               <h2>Distance</h2>
               <p>Categorises objects based on their distance from Earth. From our own solar system, to distant galaxies and beyond</p>
-              <img className="home-card-image" src="https://dqe1enhkuqw3t.cloudfront.net/compare/satellite.jpg" />
+              <img className="home-card-image" src="img/compare/satellite.jpg" />
             </div>
           </NavLink>
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
             <div>
               <h2>Temperature</h2>
               <p>From the coldest reaches of deep space to the cores of the brightest stars, with some familiar places in between</p>
-              <img className="home-card-image" src="https://dqe1enhkuqw3t.cloudfront.net/compare/sun.jpg" />
+              <img className="home-card-image" src="img/compare/sun.jpg" />
             </div>
           </NavLink>
         </div>
@@ -54,7 +54,7 @@ export default function Home() {
             <div>
               <h2>Speed</h2>
               <p>This list begins with the slowest objects in our solar system and gradually builds up to near the speed of light</p>
-              <img className="home-card-image" src="https://dqe1enhkuqw3t.cloudfront.net/compare/mercury.jpg" />
+              <img className="home-card-image" src="img/compare/mercury.jpg" />
             </div>
           </NavLink>
         </div>
