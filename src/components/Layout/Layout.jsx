@@ -100,7 +100,6 @@ export default function Layout() {
     if (page !== currentPage) {
       setPage(currentPage)
       getLocation()
-      console.log('test')
       clearInterval(pageInterval)
     }
   }
